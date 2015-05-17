@@ -24,7 +24,8 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script><!-- endbuild -->
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/components/sorter.js"></script><!-- endbuild -->
   </head>
   <body ng-controller="MainCtrl" class="logged-out corepacki networki responsive section-gallery viewing-projects be-network no-has-touch has-placeholders globalnav__external__no-touch">
     <nav id="nav-wrap" class="js-nav-primary dark-background">
@@ -59,8 +60,8 @@
       <div id="site-content">
         <div id="sorts-container-sticky-wrapper" class="sticky">
           <div id="sorts-container">
-            <div id="sorts" class="grid-site js-sorts"><span class="sort js-sort-content sort-content discover-sprite"><span class="js-sort-label sort-label beicons-pre beicons-pre-grid">Projects</span>
-                <div class="popup menu no-buttons no-title">
+            <div id="sorts" class="grid-site js-sorts"><span sorter sorttype="content" class="sort js-sort-content sort-content discover-sprite"><span class="js-sort-label sort-label beicons-pre beicons-pre-grid">Projects</span>
+                <div ng-class="{shown: sorters.content}" class="popup menu no-buttons no-title">
                   <div class="popup-inner-wrap">
                     <div class="popup-content">
                       <div class="list-header">View</div>
@@ -73,8 +74,8 @@
                     </div>
                     <div class="popup-buttons hide"></div>
                   </div>
-                </div></span><span class="sort js-sort-fields sort-fields hide-wip discover-sprite"><span class="js-sort-label sort-label sort-label-fields">All Creative Fields</span>
-                <div class="popup menu no-buttons creative-fields">
+                </div></span><span sorter sorttype="fields" class="sort js-sort-fields sort-fields hide-wip discover-sprite"><span class="js-sort-label sort-label sort-label-fields">All Creative Fields</span>
+                <div ng-class="{shown: sorters.fields}" class="popup menu no-buttons creative-fields">
                   <div class="popup-inner-wrap">
                     <div class="popup-content">
                       <div id="fields-menu" class="cfix">
@@ -87,8 +88,8 @@
                       </div>
                     </div>
                   </div>
-                </div></span><span class="sort js-sort-content sort-featured discover-sprite"><span class="js-sort-label sort-label">Featured</span>
-                <div class="popup menu no-buttons reative-fields">
+                </div></span><span sorter sorttype="featured" class="sort js-sort-content sort-featured discover-sprite"><span class="js-sort-label sort-label">Featured</span>
+                <div ng-class="{shown: sorters.featured}" class="popup menu no-buttons reative-fields">
                   <div class="popup-inner-wrap">
                     <div class="popup-content">
                       <div id="featured-menu" class="sort-menu cfix desktop-list">
@@ -104,8 +105,8 @@
                       </div>
                     </div>
                   </div>
-                </div></span><span class="sort js-sort-content sort-location discover-sprite"><span class="js-sort-label sort-label">Worldwide</span>
-                <div class="popup menu no-buttons location-menu">
+                </div></span><span sorter sorttype="discover" class="sort js-sort-content sort-location discover-sprite"><span class="js-sort-label sort-label">Worldwide</span>
+                <div ng-class="{shown: sorters.discover}" class="popup menu no-buttons location-menu">
                   <div class="popup-inner-wrap">
                     <div class="popup-content">
                       <div class="sort-menu search-option">

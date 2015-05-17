@@ -11,6 +11,13 @@
 var newApp = angular.module('NewApp', ['infinite-scroll']);
 
 newApp.controller('MainCtrl', function($scope, ItemLoad) {
+  $scope.sorters = {
+    content: false,
+    fields: false,
+    featured: false,
+    location: false
+  };
+  $scope.showSorter = showSorter;
   $scope.itemLoad = new ItemLoad();
     $scope.FieldItems = [
       {
@@ -38,6 +45,19 @@ newApp.controller('MainCtrl', function($scope, ItemLoad) {
         'name': 'Architecture'
       }
     ];
+  function showSorter(sortType) {
+    var currentSorter = $scope.sorters[sortType];
+    for(var s in $scope.sorters) {
+      $scope.sorters[s] = false;
+    }
+    if(currentSorter) {
+      $scope.sorters[sortType] = false;
+    } else {
+      $scope.sorters[sortType] = true;
+    }
+    $scope.$apply();
+  }
+
 });
 
 // Reddit constructor function to encapsulate HTTP and pagination logic
