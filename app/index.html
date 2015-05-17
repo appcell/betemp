@@ -1,39 +1,17 @@
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+<html lang="en" ng-app="NewApp">
   <head>
-    <meta charset="utf-8">
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <!-- endbuild -->
-  </head>
-  <body ng-app="NewApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-
-
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src='bower_components/angular/angular.js'></script>
+    <link type="text/css" rel="stylesheet" href="/styles/basic.css">
+    <link type="text/css" rel="stylesheet" href="/styles/layout.css">
+    <link type="text/css" rel="stylesheet" href="/styles/icons.css">
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
-    <script src='scripts/app.js'></script>
-    <script src='scripts/index.js'></script>  
-    
-
+    <script src="scripts/app.js"></script>
+    <script src="scripts/index.js"></script><!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -41,14 +19,185 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
+    <script src="bower_components/angular-touch/angular-touch.js"></script><!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
-</body>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script><!-- endbuild -->
+  </head>
+  <body ng-controller="MainCtrl" class="logged-out corepacki networki responsive section-gallery viewing-projects be-network no-has-touch has-placeholders globalnav__external__no-touch">
+    <nav id="nav-wrap" class="js-nav-primary dark-background">
+      <h1 id="logo"></h1>
+      <div id="nav-primary-wrap">
+        <ul id="nav-primary" class="nav-list">
+          <li class="nav-item"><a class="nav-item-link active">Discover</a>
+            <ul class="nav-submenu">
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-discover"> Search & Explore</a></li>
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-follow"> Creatives to Follow</a></li>
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-follow"> Creatives to Follow</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-item-link active">Jobs</a>
+            <ul class="nav-submenu"></ul>
+          </li>
+          <li class="nav-joblist">Hiring Talent? </li><a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job</a>
+        </ul>
+      </div>
+      <div id="nav-upsell-wrap">
+        <ul id="nav-upsell" class="nav-list">Showcase & Discover Creative Work <a id="sign-up-button" class="js-adobeid-signup form-button form-button-small form-button-default">Sign Up for Free</a>
+          <li class="nav-joblist">Hiring Talent? <a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job?</a></li>
+        </ul>
+      </div>
+      <div id="nav-login"><a id="login-link" class="js-adobeid-signin beicons-pre beicons-pre-privacy"> log in</a></div>
+    </nav>
+    <div id="top-panel" class="slide-panel"><a id="top-panel-blocking"></a>
+      <div class="toolbar"></div>
+      <div id="showcase-and-discover" class="cta-header dark-background">
+        <h1 class="cta-header-title">Showcase & Discover Creative Work</h1><span class="hide-phone"><a class="js-adobeid-signup form-button form-button-xlarge form-button-default">Sign Up</a></span>
+      </div>
+      <div id="site-content">
+        <div id="sorts-container-sticky-wrapper" class="sticky">
+          <div id="sorts-container">
+            <div id="sorts" class="grid-site js-sorts"><span class="sort js-sort-content sort-content discover-sprite"><span class="js-sort-label sort-label beicons-pre beicons-pre-grid">Projects</span>
+                <div class="popup menu no-buttons no-title">
+                  <div class="popup-inner-wrap">
+                    <div class="popup-content">
+                      <div class="list-header">View</div>
+                      <ul class="sort-content-list">
+                        <li><a class="beicons-pre beicons-pre-grid js-content-type active">Projects</a></li>
+                        <li><a class="beicons-pre beicons-pre-wip js-content-type">Work in Progress</a></li>
+                        <li><a class="beicons-pre beicons-pre-owner js-content-type">People</a></li>
+                        <li><a class="beicons-pre beicons-pre-members js-content-type">Teams</a></li>
+                      </ul>
+                    </div>
+                    <div class="popup-buttons hide"></div>
+                  </div>
+                </div></span><span class="sort js-sort-fields sort-fields hide-wip discover-sprite"><span class="js-sort-label sort-label sort-label-fields">All Creative Fields</span>
+                <div class="popup menu no-buttons creative-fields">
+                  <div class="popup-inner-wrap">
+                    <div class="popup-content">
+                      <div id="fields-menu" class="cfix">
+                        <div class="submenu left-menu left">
+                          <div class="list-header">Popular</div>
+                          <ul id="popular-fields-list" class="js-fields-list">
+                            <li ng-repeat="item in FieldItems"><a href="#{{item.dataKey}}">{{item.name}}</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></span><span class="sort js-sort-content sort-featured discover-sprite"><span class="js-sort-label sort-label">Featured</span>
+                <div class="popup menu no-buttons reative-fields">
+                  <div class="popup-inner-wrap">
+                    <div class="popup-content">
+                      <div id="featured-menu" class="sort-menu cfix desktop-list">
+                        <div class="list-header">Browse</div>
+                        <ul id="browse-list" class="divided-list">
+                          <li class="list-browse sort-item-featured_date"><a href="?sort=featured_date" class="discover-sprite-pre discover-sprite sort-item sort-featured_date active">Featured</a></li>
+                          <li class="list-browse sort-item-appreciations"><a href="?sort=appreciations" class="discover-sprite-pre discover-sprite sort-item sort-appreciations">Most Appreciated</a></li>
+                          <li class="list-browse sort-item-views"><a href="?sort=views" class="discover-sprite-pre discover-sprite sort-item sort-views">Most Viewed</a></li>
+                          <li class="list-browse sort-item-comments"><a href="?sort=comments" class="discover-sprite-pre discover-sprite sort-item sort-comments">Most Discussed</a></li>
+                          <li class="list-browse sort-item-published_date"><a href="?sort=published_date" class="discover-sprite-pre discover-sprite sort-item sort-published_date">Most Recent</a></li>
+                          <li class="list-browse sort-item-followed hide"><a href="?sort=followed" class="discover-sprite-pre discover-sprite sort-item sort-followed">Most Followed</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div></span><span class="sort js-sort-content sort-location discover-sprite"><span class="js-sort-label sort-label">Worldwide</span>
+                <div class="popup menu no-buttons location-menu">
+                  <div class="popup-inner-wrap">
+                    <div class="popup-content">
+                      <div class="sort-menu search-option">
+                        <div class="search-option-header">Location</div>
+                        <div class="search-option-content">
+                          <div class="country-container form-item">
+                            <label>Country</label>
+                            <select style="display: none;" class="js-country country form-select ui-selectmenu-large">
+                              <option value="--" class="form-option form-option-empty">Select a Country</option>
+                              <option value="United States" class="form-option">United States</option>
+                            </select><a id="ui-selectmenu-fa8af9c-button" class="ui-selectmenu ui-widget ui-state-default ui-selectmenu-dropdown js-country country form-select ui-selectmenu-large form-option form-option-empty ui-state-active ui-corner-top"><span class="ui-selectmenu-status">Select a Country</span><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span></a>
+                          </div>
+                          <div class="city-container form-item ui-front">
+                            <label>City</label><span class="ui-helper-hidden-accessible"></span>
+                            <input type="text" disabled="disabled" class="js-city city form-text form-text-normal disabled ui-autocomplete-input">
+                          </div>
+                        </div>
+                        <div class="search-option-confirm clear"><span class="js-apply form-button form-button-small form-button-default left">Apply</span><span class="js-clear search-option-cancel discover-sprite-pre right hide">Clear</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div></span></div>
+            <div id="breadcrumbs-container" class="listselector_selections"></div>
+          </div>
+        </div>
+        <div id="content-wrapper">
+          <div id="content-container" class="grid-site cfix">
+            <div id="content" infinite-scroll="itemLoad.nextPage()" infinite-scroll-disabled="itemLoad.busy" infinite-scroll-distance="0" class="border-box left cfix users-gallery-container projects">
+              <div class="discover-loading-spinner loading-spinner ignore-me">
+                <div aria-role="progressbar" class="spinner"></div>
+              </div>
+              <div class="covers">
+                <div data-id="{{item.dataId}}" data-ordinal="{{item.dataOrdinal}}" ng-repeat="item in itemLoad.items" class="js-item cover-block project-cover js-project-cover editable cfix first">
+                  <div class="cover-img"><a href="{{item.coverImgLink}}" class="cover-img-link">
+                      <div data-picture><img src="{{item.coverImgSrc}}" class="cover-img-el"></div></a></div>
+                  <div class="cover-info-stats">
+                    <div class="cover-info">
+                      <div class="cover-name"><a href="{{item.coverNameLink}}" class="projectName cover-name-link">{{item.coverName}}</a></div>
+                      <div class="cover-by-wrap">
+                        <div class="cover-by">by</div>
+                        <div class="cover-by-link"><a class="text-ellipsis single-owner-link"></a><span class="js-mini-profile">{{item.author}}</span></div>
+                      </div>
+                    </div>
+                    <div class="cover-stats-fields-wrap">
+                      <div class="cover-stat-wrap"><span class="cover-stat cover-stat-appreciations beicons-pre beicons-pre-thumb">{{item.appreciation}}</span><span class="cover-stat cover-stat-views beicons-pre beicons-pre-eye hide-phone">{{item.views}}</span><span class="featured tooltipi-container beicons-pre beicons-pre-featured-small"></span></div>
+                      <div class="cover-fields"><a ng-repeat="tag in item" href="{{tag.link}}" class="field-link">{{tag.name}},</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div ng-show="itemLoad.busy" class="loading">Loading...</div>
+            </div>
+            <div id="filters" class="border-box left">
+              <div id="sidebar-fields" class="filter-block hide-wip menu-closed">
+                <div class="list-header discover-sprite-pre">Popular Creative Fields</div>
+                <ul class="list-links">
+                  <li><a>Graphic Design</a></li>
+                  <li><a>Graphic Design</a></li>
+                  <li><a>Graphic Design</a></li>
+                  <li><a>Graphic Design  </a></li>
+                </ul>
+              </div>
+              <div class="filter-block">
+                <div id="search-container" class="form-item form-item-text be-placeholder ui-front"><span class="ui-helper-hidden-accessible"></span>
+                  <input class="form-text form-text form-search js-discover-search validate ui-autocomplete-input">
+                  <ul id="ul-id-1" name="search" type="text" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"></ul>
+                </div>
+              </div>
+              <div id="sidebar-fixed-sticky-wrapper" class="sticky">
+                <div id="sidebar-fixed">
+                  <div class="filter-block hide-wip">
+                    <div class="list-header hide-teams">Filter by</div>
+                    <ul id="filter-menu" class="block-menu hide-teams">
+                      <li class="filter">
+                        <div class="menu-item filter-schools discover-sprite">Schools</div>
+                      </li>
+                      <li class="filter filter-temp-last">
+                        <div class="menu-item filter-tools discover-sprite">Tool Used</div>
+                      </li>
+                      <li class="filter hide-users">
+                        <div class="menu-item filter-color discover-sprite">Color</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="infinity-footer" class="js-footer"></div>
+    </div>
+    <div id="nav-basement" class="js-nav-basement"></div>
+  </body>
 </html>
