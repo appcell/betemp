@@ -90,6 +90,9 @@
   content: '_';
   top: 3px;
 }
+.sort:hover:after, .sort.active:after {
+  background-position: -122px 0;
+}
 
 .sort-appreciations:before {
   background-position: -895px 0;
