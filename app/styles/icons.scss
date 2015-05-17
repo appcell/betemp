@@ -48,6 +48,20 @@
 .beicons-pre-members:before {
   content: ']';
 }
+.beicons-pre-owner:before {
+  content: '^';
+}
+.beicons-pre-members:before {
+  content: ']';
+}
+.beicons-pre-prosite:before {
+  content: 'W';
+}
+
+
+
+
+
 .sort-appreciations:before {
   background-position: -895px 0;
   height: 12px;
