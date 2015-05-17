@@ -735,6 +735,12 @@ sort .sort-content-list .active {
   position: relative;
 }
 
+@media (max-width: 1519px) {
+  #content {
+    width: 910px;
+  }
+}
+
 // ====== ART ITEM ======
 .project-cover {
   float: left;

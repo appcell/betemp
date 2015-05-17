@@ -8,6 +8,11 @@ $default-font: normal normal normal 12px/16px 'Helvetica Neue',Helvetica,Arial,s
     font-style: normal;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -29,13 +34,19 @@ body {
 }
 
 .grid-site {
-  max-width: 1593px;
+  // max-width: 1593px;
 }
 
 .verify-warning, .grid-site {
   margin: auto;
-  // max-width: 1145px;
+  max-width: 1145px;
   width: 100%;
+}
+
+@media (max-width: 1519px) {
+  .verify-warning, .grid-site {
+    max-width: 1145px;
+  }
 }
 
 .cfix {
