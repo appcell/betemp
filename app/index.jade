@@ -6,8 +6,8 @@ html(lang="en", ng-app="NewApp")
     link(type="text/css",rel="stylesheet",href="/styles/layout.css")
     link(type="text/css",rel="stylesheet",href="/styles/icons.css")
 
-    //- script(src="bower_components/jquery/dist/jquery.min.js")
-    //- script(src='scripts/index.js')
+    script(src="bower_components/jquery/dist/jquery.min.js")
+    script(src='scripts/index.js')
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -21,6 +21,7 @@ html(lang="en", ng-app="NewApp")
     script(src="bower_components/angular-route/angular-route.js")
     script(src="bower_components/angular-sanitize/angular-sanitize.js")
     script(src="bower_components/angular-touch/angular-touch.js")
+    script(src="bower_components/jquery/dist/jquery.min.js")
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -37,6 +38,7 @@ html(lang="en", ng-app="NewApp")
 
     nav#nav-wrap.js-nav-primary.dark-background.can-scrolled
       h1#logo
+        a#logo-link
       #nav-primary-wrap
         ul#nav-primary.nav-list
           li.nav-item
@@ -47,10 +49,14 @@ html(lang="en", ng-app="NewApp")
               li.nav-item
                 a.nav-item-link.active.beicons-pre.beicons-pre-follow  Creatives to Follow
               li.nav-item
-                a.nav-item-link.active.beicons-pre.beicons-pre-follow  Creatives to Follow
+                a.nav-item-link.active.beicons-pre.beicons-pre-badge  Galleries & Collections
           li.nav-item
             a.nav-item-link.active Jobs
             ul.nav-submenu
+              li.nav-item
+                a.nav-item-link.active.beicons-pre.beicons-pre-suitcase  Creative Jobs
+              li.nav-item
+                a.nav-item-link.active.beicons-pre.beicons-pre-add  Post a Job
           li.nav-joblist Hiring Talent?
           a.job-button.js-job-button.form-button.form-button-small.form-button-dark Post a Job
       #nav-upsell-wrap
