@@ -340,7 +340,6 @@ newApp.factory('ItemLoad', function($http) {
 
   ItemLoad.prototype.nextPage = function() {
     if (this.busy) return;
-    alert(1);
     this.busy = true;
 
     var url = "#";
