@@ -21,24 +21,27 @@ $(document).ready(function(){
         }
 
     });
-    $('a.form-button-following').hide();
-    $('a.form-button-unfollow').hide();
     
-    $('a.form-button-follow').click(function (){
-        $('a.form-button-following').show();
-        $('a.form-button-follow').hide();
-    });
-    $('a.form-button-following').mouseover(function (){
-        $('a.form-button-unfollow').show();
-        $('a.form-button-following').hide();
-    });
-    $('a.form-button-unfollow').mouseout(function (){
-        $('a.form-button-unfollow').hide();
-        $('a.form-button-following').show();
-    });
-    $('a.form-button-unfollow').click(function (){
-        $('a.form-button-unfollow').hide();
-        $('a.form-button-following').hide();
-        $('a.form-button-follow').show();
-    });
+//    $('a.form-button-follow').click(function (){
+//        $('.user-follow').removeClass('follow');
+//        $('.user-follow').removeClass('unfollow');
+//        $('.user-follow').addClass('following');
+//    });
+    
+//    $('a.form-button-following').mouseover(function (){
+//        $('.user-follow').addClass('unfollow');
+//        $('.user-follow').removeClass('following');
+//        $('.user-follow').removeClass('follow');
+//    });
+//    $('a.form-button-unfollow').mouseout(function (){
+//        $('.user-follow').addClass('following');
+//        $('.user-follow').removeClass('unfollow');
+//        $('.user-follow').removeClass('follow');
+//
+//    });
+//    $('a.form-button-unfollow').click(function (){
+//        $('.user-follow').removeClass('unfollow');
+//        $('.user-follow').removeClass('following');
+//        $('.user-follow').addClass('follow');
+//    });
 });

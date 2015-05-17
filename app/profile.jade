@@ -15,7 +15,6 @@ html(lang="en", ng-app="NewApp")
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    script(src="bower_components/angular/angular.js")
     script(src="bower_components/angular-animate/angular-animate.js")
     script(src="bower_components/angular-aria/angular-aria.js")
     script(src="bower_components/angular-cookies/angular-cookies.js")
@@ -98,7 +97,7 @@ html(lang="en", ng-app="NewApp")
               
             #profile-actions
               #profile-action-follow.js-profile-action-follow.profile-action
-                .user-follow.js-action-follow-user.follow-button-container
+                .user-follow.js-action-follow-user.follow-button-container.follow
                   a.form-button.js-form-button-follow.form-button-follow.form-button-default.form-button-left-icon.form-button-icon-follow Follow
                   a.form-button.form-button-following.form-button-light-and-grey.form-button-left-icon.form-button-icon-following Following
                   a.form-button.js-form-button-unfollow.form-button-unfollow.form-button-red.form-button-left-icon.form-button-icon-unfollow Unfollow
@@ -141,26 +140,26 @@ html(lang="en", ng-app="NewApp")
           #profile-info-wrap.js-profile-info-wrap.content-section-wrap
             #profile-focus.profile-section.content-minor-section
               h3.profile-sidebar-label.content-minor-section-label Focus
+              a.field Art Direction, 
+              a.field Art Direction, 
               a.field Art Direction
-              a.field Art Direction
-              a.field Art Direction             
             #profile-featured.profile-section.content-minor-section
               h3.profile-sidebar-label.content-minor-section-label Featured In
-                span.featured-ribbon-wrap
-                  a(href="#")
-                    div
-                      div(data-src="{{item.dataSrc}}",data-title="{{item.title}}",data-class="featured-ribbon")
-                      img.featured-ribbon(src="https://a2.behance.net/img/galleries/ribbons/1x/net.png")
+              span.featured-ribbon-wrap
+                a(href="#")
+                  div
+                    div(data-src="{{item.dataSrc}}",data-title="{{item.title}}",data-class="featured-ribbon")
+                    img.featured-ribbon(src="https://a2.behance.net/img/galleries/ribbons/1x/net.png")
             #profile-web.profile-section.content-minor-section
               h3.profile-sidebar-label.content-minor-section-label On The Web
-                ul#profile-web-list
-                  li
-                    a.ss-social Facebook
-                  li
-                    a.ss-social Instagram
+              ul#profile-web-list
+                li
+                  a.ss-social Facebook
+                li
+                  a.ss-social Instagram
             .profile-section.content-minor-section
-              h3.profile-sidebar-label.content-minor-section-label About.
-                Violaine et Jérémy
+              h3.profile-sidebar-label.content-minor-section-label About
+              p Violaine et Jérémy
             #profile-web-references.profile-section.content-minor-section
               h3.profile-sidebar-label.content-minor-section-label Web References
               div
