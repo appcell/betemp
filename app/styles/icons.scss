@@ -48,6 +48,11 @@
 .beicons-pre-members:before {
   content: ']';
 }
+
+.sort:hover:after, .sort.active:after {
+  background-position: -122px 0;
+}
+
 .sort-appreciations:before {
   background-position: -895px 0;
   height: 12px;

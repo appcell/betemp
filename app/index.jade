@@ -30,6 +30,7 @@ html(lang="en", ng-app="NewApp")
     script(src="scripts/app.js")
     script(src="scripts/controllers/main.js")
     script(src="scripts/controllers/about.js")
+    script(src="scripts/components/sorter.js")
     <!-- endbuild -->
 
 
@@ -74,9 +75,9 @@ html(lang="en", ng-app="NewApp")
         #sorts-container-sticky-wrapper.sticky
           #sorts-container
             #sorts.grid-site.js-sorts
-              span.sort.js-sort-content.sort-content.discover-sprite
+              span.sort.js-sort-content.sort-content.discover-sprite(sorter, sorttype="content")
                 span.js-sort-label.sort-label.beicons-pre.beicons-pre-grid Projects
-                .popup.menu.no-buttons.no-title
+                .popup.menu.no-buttons.no-title(ng-class="{shown: sorters.content}")
                   .popup-inner-wrap
                     .popup-content
                       .list-header View
@@ -91,9 +92,9 @@ html(lang="en", ng-app="NewApp")
                           a.beicons-pre.beicons-pre-members.js-content-type Teams
                     .popup-buttons.hide
                 
-              span.sort.js-sort-fields.sort-fields.hide-wip.discover-sprite
+              span.sort.js-sort-fields.sort-fields.hide-wip.discover-sprite(sorter, sorttype="fields")
                 span.js-sort-label.sort-label.sort-label-fields All Creative Fields
-                .popup.menu.no-buttons.creative-fields
+                .popup.menu.no-buttons.creative-fields(ng-class="{shown: sorters.fields}")
                   .popup-inner-wrap
                     .popup-content
                       #fields-menu.cfix
@@ -103,9 +104,9 @@ html(lang="en", ng-app="NewApp")
                             li(ng-repeat='item in FieldItems')
                               a(href='#{{item.dataKey}}') {{item.name}}
                     
-              span.sort.js-sort-content.sort-featured.discover-sprite
+              span.sort.js-sort-content.sort-featured.discover-sprite(sorter, sorttype="featured")
                 span.js-sort-label.sort-label Featured
-                .popup.menu.no-buttons.reative-fields
+                .popup.menu.no-buttons.reative-fields(ng-class="{shown: sorters.featured}")
                   .popup-inner-wrap
                     .popup-content
                       #featured-menu.sort-menu.cfix.desktop-list
@@ -124,9 +125,9 @@ html(lang="en", ng-app="NewApp")
                           li.list-browse.sort-item-followed.hide
                             a(href="?sort=followed").discover-sprite-pre.discover-sprite.sort-item.sort-followed Most Followed
 
-              span.sort.js-sort-content.sort-location.discover-sprite
+              span.sort.js-sort-content.sort-location.discover-sprite(sorter, sorttype="discover")
                 span.js-sort-label.sort-label Worldwide
-                .popup.menu.no-buttons.location-menu
+                .popup.menu.no-buttons.location-menu(ng-class="{shown: sorters.discover}")
                   .popup-inner-wrap
                     .popup-content
                       div.sort-menu.search-option
