@@ -6,6 +6,7 @@ html(lang="en", ng-app="NewApp")
     link(type="text/css",rel="stylesheet",href="/styles/layout.css")
     link(type="text/css",rel="stylesheet",href="/styles/icons.css")
     link(type="text/css",rel="stylesheet",href="/styles/gallery.css")
+    link(type="text/css",rel="stylesheet",href="/styles/footer.css")
 
     //- script(src="bower_components/jquery/dist/jquery.min.js")
     //- script(src='scripts/index.js')
@@ -60,11 +61,9 @@ html(lang="en", ng-app="NewApp")
         a#login-link.js-adobeid-signin.beicons-pre.beicons-pre-privacy  log in
     #top-panel.slide-panel
       a#top-panel-blocking
-      .toolbar
 
     #top-panel.slide-panel
 
-      a#top-panel-blocking
       #site-content
         #project-wrap.js-project-wrap.v-5
           #project.js-project.breakpoint-comments(data-id='25640511', data-mature_content='0', data-mature_access='allowed', style='max-width: 1400px;')
@@ -187,14 +186,6 @@ html(lang="en", ng-app="NewApp")
                   .spacer
                     .divider
 
-                #appreciation.show-on-preview.unclickable-mask.appreciation-button.js-appreciate
-                  #sticker
-                    .thumb.beicons-pre.beicons-pre-thumb
-
-                    .text Thank You!
-
-                  .js-appreciation-date.project-appreciation-date.beicons-pre.beicons-pre-thumb
-
             #project-owner-bar.cfix.show-on-preview.unclickable-mask
               #project-owner-bar-inner
                 #project-owner-bar-info
@@ -244,6 +235,7 @@ html(lang="en", ng-app="NewApp")
                   .cover-stat-fields-wrap
                     .cover-stat-wrap
                       span.cover-stat.cover-stat-appreciations.beicons-pre.beicons-pre-thumb 263
+                      span.cover-stat.cover-stat-views.beicons-pre.beicons-pre-eye 1955
 
                     .cover-fields
                       a.field-link(href='/search?field=109', title='Branding') Branding,
@@ -280,6 +272,7 @@ html(lang="en", ng-app="NewApp")
                   .cover-stat-fields-wrap
                     .cover-stat-wrap
                       span.cover-stat.cover-stat-appreciations.beicons-pre.beicons-pre-thumb 1122
+                      span.cover-stat.cover-stat-views.beicons-pre.beicons-pre-eye 1955
 
                     .cover-fields
                       a.field-link(href='/search?field=44', title='Graphic Design') Graphic Design,
@@ -313,6 +306,7 @@ html(lang="en", ng-app="NewApp")
                   .cover-stat-fields-wrap
                     .cover-stat-wrap
                       span.cover-stat.cover-stat-appreciations.beicons-pre.beicons-pre-thumb 1163
+                      span.cover-stat.cover-stat-views.beicons-pre.beicons-pre-eye 1955
                     .cover-fields
                       a.field-link(href='/search?field=122', title='Digital Art') Digital Art,
 
@@ -345,6 +339,7 @@ html(lang="en", ng-app="NewApp")
                   .cover-stat-fields-wrap
                     .cover-stat-wrap
                       span.cover-stat.cover-stat-appreciations.beicons-pre.beicons-pre-thumb 1650
+                      span.cover-stat.cover-stat-views.beicons-pre.beicons-pre-eye 1955
                     .cover-fields
                       a.field-link(href='/search?field=109', title='Branding') Branding
 
@@ -394,7 +389,8 @@ html(lang="en", ng-app="NewApp")
                     span.js-comments-total (92)
 
                   .post-comment-logged-out You must
-                    a.js-adobeid-signup.link-login.fake-link sign up to join the conversation.
+                    a.js-adobeid-signup.link-login.fake-link sign up
+                    | to join the conversation.
                   div
                     ul.js-comments-list.comments-list
                       li.comment-container.cfix.user-comment(data-id='21130573', style='display: list-item;')
@@ -408,6 +404,65 @@ html(lang="en", ng-app="NewApp")
                             .comment-text Please check out my work here
                               a(rel='nofollow', href='http://www.behance.net/Madjid-', target='_blank') https://www.behance.net/Madjid-
                         .comment-actions
+                  .js-see-more.comments-pagination See More Comments
+                    span.beicons-pre.beicons-pre-arrow-down
+
+                #project-footer-info-wrap
+                  #project-block-footer-basic-info.project-block
+                    h3.project-block-header Basic Info
+                    | The Qontinent: The Last Resort
+                    | The Qontinent is a hard dance outdoor festival taking place in Belgium .
+                    | This year theme is The Last Resort . We tried to find a good balance between some post apocaliptic feeling and a sunny & warm atmosphere .
+                    | We got inspired by illustrators like Olly Moss. We tried to combine their approach with our  digital art style.
+                    .project-published
+                      | Published:
+                      span.js-updating-timestamp(data-timestamp='1430920765') May 6, 2015
+                  #project-block-footer-teams.project-block
+                    h3.project-block-header Project Made For
+                    .profile-list
+                      a.normal-link.profile-list-image-wrap.js-mini-profile(href='http://www.behance.net/BehanceBelgium', data-id='36483')
+                        img.profile-list-image(src='https://mir-s3-cdn-cf.behance.net/team/115/3bd6d336483.5547443091d40.png')
+                      .profile-list-info.profile-list-info-row
+                        .profile-list-name
+                          a.normal-link.js-mini-profile(data-id='36483', href='http://www.behance.net/BehanceBelgium') Behance Belgium
+                        .profile-location
+                          a.profile-list-location-link.beicons-pre.beicons-pre-location(href='') Brussels, Belgium
+                        a.profile-list-follow-link.follow-button-container.js-action-follow-team(data-followee='36483', data-following='false')
+                          span.follow + Follow
+                  #project-block-footer-credits.project-block
+                    h3.project-block-header Credits
+                    .profile-list
+                      a.normal-link.profile-list-image-wrap.js-mini-profile(href='https://www.behance.net/frenchtoast', data-id='2076627')
+                        img.profile-list-image(src='https://mir-s3-cdn-cf.behance.net/user/115/2076627.53b784b2141f3.jpg')
+                      .profile-list-info.profile-list-info-row
+                        .profile-list-name
+                          a.normal-link.js-mini-profile(data-id='2076627', href='https://www.behance.net/frenchtoast') French Toast
+                        .profile-location
+                          a.profile-list-location-link.beicons-pre.beicons-pre-location(href='/search?content=users&sort=appreciations&country=BE&city=Li%C3%A8ge') Liège, Belgium
+                        a.profile-list-follow-link.follow-button-container.js-action-follow-user(data-followee='2076627', data-following='false')
+                          span.follow + Follow
+                  #project-block-footer-tags.project-block
+                    h3.project-block-header Tags
+                    a.object-tag(href='/search?content=projects&user_tags=1177361') hardstyle
+                    a.object-tag(href='/search?content=projects&user_tags=1108597') hard
+                    a.object-tag(href='/search?content=projects&user_tags=17451529') DANCE
+                    a.object-tag(href='/search?content=projects&user_tags=971165') poster
+                    a.object-tag(href='/search?content=projects&user_tags=971153') festival
+                    a.object-tag(href='/search?content=projects&user_tags=1002251') belgium
+                    a.object-tag(href='/search?content=projects&user_tags=978045') summer
+                  .project-block-minimal
+                    #project-block-copyright
+                      .tooltipi-container
+                        img(src='https://a2.behance.net/img/project/cc/by.svg')
+                        img(src='https://a2.behance.net/img/project/cc/nc.svg')
+                        .tooltipi.tooltipi-white
+                          .project-block-header Copyright Info
+                          p Attribution, Non-commercial
+                          a(href='http://creativecommons.org/licenses/by-nc/3.0/')
+                            | Read More
+                            span.beicons-pre.beicons-pre-promote
+                    #project-block-spam.js-project-spam
+                      a.js-action-report.beicons-pre.beicons-pre-report(data-type='project', data-id='25640511') Report
 
           #project-sidebar.show-on-preview.unclickable-mask.js-project-sidebar-wrap
             .project-sidebar-spacer
@@ -436,13 +491,12 @@ html(lang="en", ng-app="NewApp")
                       | The Qontinent: The Last Resort
                       | The Qontinent is a hard dance outdoor festival taking place in Belgium .
                       | This year theme is The Last Resort . We &mldr;
-                      | span.js-more-toggle-link.fake-link Read More
+                      | span.js-more-toggle-link.fake-link
                     .variable-text.variable-text-full.hide(style='overflow: hidden;')
                       | The Qontinent: The Last Resort
                       | The Qontinent is a hard dance outdoor festival taking place in Belgium .
                       | This year theme is The Last Resort . We tried to find a good balance between some post apocaliptic feeling and a sunny &amp; warm atmosphere .
                       | We got inspired by illustrators like Olly Moss. We tried to combine their approach with our  digital art style.
-                      span.js-more-toggle-link.fake-link Read Less
                     .project-published
                       span.js-updating-timestamp(data-timestamp='1430920765') May 6, 2015
                 .sidebar-group.sticky-sidebar-buttons.show-sticky
@@ -458,3 +512,51 @@ html(lang="en", ng-app="NewApp")
                     .form-item.form-item-a
                       a.form-button.form-button-light-and-blue.form-button-large.js-action-collection(data-id='25640511', unselectable='on', tabindex='0')
                         span.beicons-pre.beicons-pre-collection Add to Collection
+      #site-footer.js-footer
+        #super-footer.cfix
+          h3
+            span.footer-logo Bēhance
+            span.footer-tagline
+              | Take Creative Control &
+              br.show-phone
+              |  Make Ideas Happen.
+          ul
+            li
+              a.light-link(href='/about') About Behance & Careers
+            li
+              a.light-link(href='http://blog.behance.net/') Blog
+            li
+              a.light-link(href='/dev') Behance API
+            br.show-phone
+            li.footer-first
+              a.light-link(href='/reviews') Portfolio Review Week
+            li
+              a.light-link(href='/testimonials') Success Stories
+            br.show-phone
+            br.show-tablet
+            li
+              a.light-link(href='http://99u.com?utm_source=network&utm_medium=activity_feed_footer&utm_campaign=network_footer_references') Creative Career Tips
+            li
+              a.light-link(href='/apps') Apps
+          ul#footer-social
+            li
+              a.ss-social(href='http://twitter.com/behance?utm_source=network&utm_medium=activity_feed_footer&utm_campaign=network_footer_references') twitter
+            li
+              a.ss-social(href='https://www.linkedin.com/company/151575?utm_source=network&utm_medium=activity_feed_footer&utm_campaign=network_footer_references') linkedin
+            li
+              a.ss-social(href='http://www.facebook.com/Behance?utm_source=network&utm_medium=activity_feed_footer&utm_campaign=network_footer_references') facebook
+            li
+              a.ss-social(href='http://www.pinterest.com/behance?utm_source=network&utm_medium=activity_feed_footer&utm_campaign=network_footer_references') pinterest
+            li
+              a.ss-social(href='http://instagram.com/behance?utm_source=network&utm_medium=activity_feed_footer&utm_campaign=network_footer_references') instagram
+        #sub-footer.cfix
+          a.footer-adobe(href='http://adobe.com', target='_blank') Part of the Adobe Family
+          .footer-misc
+            ul
+              li
+                a(href='/misc/terms') TOU & Privacy
+              li
+                a.js-zendesk(href='http://behancenetwork.zendesk.com/anonymous_requests/new') Help
+              li.footer-copyright
+                | Made in NYC.
+                | All member work copyright of respective owner, otherwise © 2006-2015 Adobe Systems Incorporated.

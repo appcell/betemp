@@ -165,3 +165,52 @@
 .profile-web-reference:after {
   content: ' \2192';
 }
+
+.beicons-pre:before {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  font-family: 'BeIcons';
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal !important;
+  line-height: 0;
+  margin-right: 5px;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+}
+
+.beicons-pre-comment:before {
+  content: '>';
+  top: 3px;
+}
+
+.form-button-left-icon:before, .form-button-right-icon:after {
+  background-image: url("//a2.behance.net/img/network/site/sprite.png?cb=490363228");
+  content: "";
+  display: inline-block;
+  position: relative;
+}
+
+.form-button-left-icon:before {
+  margin-right: 8px;
+}
+
+.form-button-icon-follow:before, .form-button-icon-following:before, .form-button-icon-unfollow:before {
+  width: 14px;
+  height: 15px;
+  top: 3px;
+}
+
+.beicons-pre-featured-small:before {
+  content: '7';
+  top: 3px;
+}
+
+.project-cover .featured:before {
+  font-size: 20px;
+  line-height: normal;
+  margin: 0 -1px 0 0;
+  width: auto;
+}
