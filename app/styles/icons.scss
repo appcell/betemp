@@ -5,30 +5,6 @@
   vertical-align: middle;
   background: url("//a2.behance.net/img/sprites/discover.png?cb=490363228") no-repeat;
 }
-
-.beicons, .beicons-pre:before {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  font-family: 'BeIcons';
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: normal !important;
-  line-height: 0;
-  margin-right: 5px;
-  position: relative;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  top: 1px;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
-.discover-sprite-pre:before, .discover-sprite:after, .autocomplete_field_wrap:before, .search-option-content:before, .crumb .listselector-selection-display:before {
-  display: inline-block;
-  content: "";
-  vertical-align: middle;
-  background: url("//a2.behance.net/img/sprites/discover.png?cb=490363228") no-repeat;
-}
 .filter-schools:after {
   background-position: -739px 0;
   height: 13px;
