@@ -6,6 +6,8 @@
   background-image: url("//a2.behance.net/img/sprites/discover.png?cb=490363228");
 }
 .filter-schools:after {
+    float: right;
+  margin-top: 10px;
   background-position: -739px 0;
   height: 13px;
   width: 16px;
@@ -16,8 +18,34 @@
   width: 16px;
 }
 .filter-schools:after {
+    float: right;
+  margin-top: 10px;
   margin-right: -2px;
-  background-position: -713px 0;
+  background-position: -739px 0;
+}
+.filter-tools:after {
+    float: right;
+  margin-top: 10px;
+  background-position: -787px 0;
+  height: 12px;
+  width: 12px;
+}
+.filter-tools:hover:after {
+  background-position: -765px 0;
+  height: 12px;
+  width: 12px;
+}
+.filter-color:after {
+    float: right;
+  margin-top: 10px;
+  background-position: -641px 0;
+  height: 14px;
+  width: 10px;
+}
+.filter-color:hover:after {
+  background-position: -621px 0;
+  height: 14px;
+  width: 10px;
 }
 .beicons-pre-discover:before {
   content: 'a';
