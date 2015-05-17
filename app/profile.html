@@ -5,6 +5,7 @@
     <link type="text/css" rel="stylesheet" href="/styles/basic.css">
     <link type="text/css" rel="stylesheet" href="/styles/layout.css">
     <link type="text/css" rel="stylesheet" href="/styles/icons.css">
+    <link type="text/css" rel="stylesheet" href="/styles/profile.css">
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
@@ -64,89 +65,83 @@
     </nav>
     <div id="top-panel" class="slide-panel"><a id="top-panel-blocking"></a>
       <div class="toolbar"></div>
-      <div id="site-content"></div>
-      <div id="profile-header-actions" class="layout-wrap js-profile-header-actions">
-        <div id="sorts-container-sticky-wrapper" class="sticky">
-          <div id="sorts-container">
-            <div id="sorts" class="grid-site js-sorts"><span class="sort js-sort-content sort-content discover-sprite"><span class="js-sort-label sort-label beicons-pre beicons-pre-grid">Projects</span>
-                <div class="popup menu no-buttons no-title">
-                  <div class="popup-inner-wrap">
-                    <div class="popup-content">
-                      <div class="list-header">View</div>
-                      <ul class="sort-content-list">
-                        <li><a class="beicons-pre beicons-pre-grid js-content-type active">Projects</a></li>
-                        <li><a class="beicons-pre beicons-pre-wip js-content-type">Work in Progress</a></li>
-                        <li><a class="beicons-pre beicons-pre-owner js-content-type">People</a></li>
-                        <li><a class="beicons-pre beicons-pre-members js-content-type">Teams</a></li>
-                      </ul>
-                    </div>
-                    <div class="popup-buttons hide"></div>
-                  </div>
-                </div></span><span class="sort js-sort-fields sort-fields hide-wip discover-sprite"><span class="js-sort-label sort-label sort-label-fields">All Creative Fields</span>
-                <div class="popup menu no-buttons creative-fields">
-                  <div class="popup-inner-wrap">
-                    <div class="popup-content">
-                      <div id="fields-menu" class="cfix">
-                        <div class="submenu left-menu left">
-                          <div class="list-header">Popular</div>
-                          <ul id="popular-fields-list" class="js-fields-list">
-                            <li ng-repeat="item in FieldItems"><a href="#{{item.dataKey}}">{{item.name}}</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div></span><span class="sort js-sort-content sort-featured discover-sprite"><span class="js-sort-label sort-label">Featured</span>
-                <div class="popup menu no-buttons reative-fields">
-                  <div class="popup-inner-wrap">
-                    <div class="popup-content">
-                      <div id="featured-menu" class="sort-menu cfix desktop-list">
-                        <div class="list-header">Browse</div>
-                        <ul id="browse-list" class="divided-list">
-                          <li class="list-browse sort-item-featured_date"><a href="?sort=featured_date" class="discover-sprite-pre discover-sprite sort-item sort-featured_date active">Featured</a></li>
-                          <li class="list-browse sort-item-appreciations"><a href="?sort=appreciations" class="discover-sprite-pre discover-sprite sort-item sort-appreciations">Most Appreciated</a></li>
-                          <li class="list-browse sort-item-views"><a href="?sort=views" class="discover-sprite-pre discover-sprite sort-item sort-views">Most Viewed</a></li>
-                          <li class="list-browse sort-item-comments"><a href="?sort=comments" class="discover-sprite-pre discover-sprite sort-item sort-comments">Most Discussed</a></li>
-                          <li class="list-browse sort-item-published_date"><a href="?sort=published_date" class="discover-sprite-pre discover-sprite sort-item sort-published_date">Most Recent</a></li>
-                          <li class="list-browse sort-item-followed hide"><a href="?sort=followed" class="discover-sprite-pre discover-sprite sort-item sort-followed">Most Followed</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div></span><span class="sort js-sort-content sort-location discover-sprite"><span class="js-sort-label sort-label">Worldwide</span>
-                <div class="popup menu no-buttons location-menu shown">
-                  <div class="popup-inner-wrap">
-                    <div class="popup-content">
-                      <div class="sort-menu search-option">
-                        <div class="search-option-header">Location</div>
-                        <div class="search-option-content">
-                          <div class="country-container form-item">
-                            <label>Country</label>
-                            <select style="display: none;" class="js-country country form-select ui-selectmenu-large">
-                              <option value="--" class="form-option form-option-empty">Select a Country</option>
-                              <option value="United States" class="form-option">United States</option>
-                            </select><a id="ui-selectmenu-fa8af9c-button" class="ui-selectmenu ui-widget ui-state-default ui-selectmenu-dropdown js-country country form-select ui-selectmenu-large form-option form-option-empty ui-state-active ui-corner-top"><span class="ui-selectmenu-status">Select a Country</span><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span></a>
-                          </div>
-                          <div class="city-container form-item ui-front">
-                            <label>City</label><span class="ui-helper-hidden-accessible"></span>
-                            <input type="text" disabled="disabled" class="js-city city form-text form-text-normal disabled ui-autocomplete-input">
-                          </div>
-                        </div>
-                        <div class="search-option-confirm clear"><span class="js-apply form-button form-button-small form-button-default left">Apply</span><span class="js-clear search-option-cancel discover-sprite-pre right hide">Clear</span></div>
-                      </div>
-                    </div>
-                  </div>
-                </div></span></div>
-            <div id="breadcrumbs-container" class="listselector_selections"></div>
-          </div>
+      <div id="site-content">
+        <div id="profile-header-actions" class="layout-wrap js-profile-header-actions">
+          <div id="navmenui-breadcrumbs" class="js-navmenui-breadcrumbs"><span class="breadcrumb-text"><a>Discover</a></span><span class="rarr">→</span><span class="breadcrumb-text">Violaine & Jeremy</span></div>
         </div>
-        <div id="content-wrapper">
-          <div id="content-container" class="grid-site cfix">
-            <div id="content" infinite-scroll="itemLoad.nextPage()" infinite-scroll-disabled="itemLoad.busy" infinite-scroll-distance="0" class="border-box left cfix users-gallery-container projects">
-              <div class="discover-loading-spinner loading-spinner ignore-me">
-                <div aria-role="progressbar" class="spinner"></div>
+        <div id="profile" class="content-container layout-wrap">
+          <div id="profile-info" class="profile-section content-minor-section content-mobile-major-section">
+            <div id="profile-display-name"><a>Violaine & Jeremy</a></div><a href="#"><img id="profile-image" src="https://mir-s3-cdn-cf.behance.net/user/138/2051365.53b7661e86615.png"></a>
+            <div id="profile-details">
+              <div id="profile-company">Violaine & Jeremy</div>
+              <div class="profile-location has-website"><a href="#" class="profile-location-link beicons-pre beicons-pre-location">Paris, France</a></div><a id="profile-website" href="#">violaineetjeremy.fr/</a>
+            </div>
+            <div id="profile-actions">
+              <div id="profile-action-follow" class="js-profile-action-follow profile-action">
+                <div class="user-follow js-action-follow-user follow-button-container"><a class="form-button js-form-button-follow form-button-follow form-button-default form-button-left-icon form-button-icon-follow">Follow</a><a class="form-button form-button-following form-button-light-and-grey form-button-left-icon form-button-icon-following">Following</a><a class="form-button js-form-button-unfollow form-button-unfollow form-button-red form-button-left-icon form-button-icon-unfollow">Unfollow</a></div>
               </div>
-              <div class="covers">
+              <div title="Message User" class="profile-action js-action-message-user js-adobeid-signup"><a class="form-button form-button-light-and-grey beicons-pre beicons-pre-mail">Message</a></div>
+            </div><span class="js-nav-phone"></span>
+          </div>
+          <div id="profile-stats" class="profile-section content-minor-section content-mobile-first-section js-profile-stats">
+            <div class="profile-stat">
+              <div class="profile-stat-label profile-sidebar-label content-minor-secton-label beicons-pre beicons-pre-eye"><span class="stat-text">Project View</span></div>
+              <div class="profile-stat-count"><a class="js-project-views-count">668016</a></div>
+            </div>
+            <div class="profile-stat">
+              <div class="profile-stat-label profile-sidebar-label content-minor-secton-label beicons-pre beicons-pre-thumb"><span class="stat-text">Appreciations</span></div>
+              <div class="profile-stat-count"><a class="js-appreciations-count">57755</a></div>
+            </div>
+            <div class="profile-stat">
+              <div class="profile-stat-label profile-sidebar-label content-minor-secton-label beicons-pre beicons-pre-followers"><span class="stat-text">Appreciations</span></div>
+              <div class="profile-stat-count"><a class="js-followers-count">57755</a></div>
+            </div>
+            <div class="profile-stat">
+              <div class="profile-stat-label profile-sidebar-label content-minor-secton-label beicons-pre beicons-pre-following"><span class="stat-text">Appreciations</span></div>
+              <div class="profile-stat-count"><a class="js-following-count">57755</a></div>
+            </div>
+          </div><span class="js-nav-desktop-tablet"></span>
+          <div id="profile-nav" class="content-main content-section-nav js-profile-nav">
+            <div class="js-iscroll-wrap profile-nav-inner content-nav-inner">
+              <div style="width: 322px; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; -webkit-transform-origin: 0px 0px 0px; -webkit-transform: translate3d(0px, 0px, 0px);" class="profile-section-header content-section-header js-section-header js-iscroll"><a class="profile-section-header-item content-section-nav-item js-section js-iscroll-item show-tablet show-phone not-active">Info</a><a class="profile-section-header-item content-section-nav-item js-section js-iscroll-item active">Projects</a><a class="profile-section-header-item content-section-nav-item js-section js-iscroll-item not-active">WIP</a><a class="profile-section-header-item content-section-nav-item js-section js-iscroll-item not-active">Appreciated</a></div>
+              <div class="profile-section-header content-section-header js-section-header js-iscroll profile-section-header-connections hide"></div>
+              <form id="searchForm" class="js-search-form profile-search hide"></form>
+            </div>
+            <div class="js-profile-collection-select profile-collection-select hide"></div>
+          </div>
+          <div id="profile-info-wrap" class="js-profile-info-wrap content-section-wrap">
+            <div id="profile-focus" class="profile-section content-minor-section">
+              <h3 class="profile-sidebar-label content-minor-section-label">Focus</h3><a class="field">Art Direction</a><a class="field">Art Direction</a><a class="field">Art Direction             </a>
+            </div>
+            <div id="profile-featured" class="profile-section content-minor-section">
+              <h3 class="profile-sidebar-label content-minor-section-label">Featured In<span class="featured-ribbon-wrap"><a href="#">
+                    <div>
+                      <div data-src="{{item.dataSrc}}" data-title="{{item.title}}" data-class="featured-ribbon"></div><img src="https://a2.behance.net/img/galleries/ribbons/1x/net.png" class="featured-ribbon">
+                    </div></a></span></h3>
+            </div>
+            <div id="profile-web" class="profile-section content-minor-section">
+              <h3 class="profile-sidebar-label content-minor-section-label">On The Web
+                <ul id="profile-web-list">
+                  <li><a class="ss-social">Facebook</a></li>
+                  <li><a class="ss-social">Instagram</a></li>
+                </ul>
+              </h3>
+            </div>
+            <div class="profile-section content-minor-section">
+              <h3 class="profile-sidebar-label content-minor-section-label">About.
+                <Violaine>et Jérémy</Violaine>
+              </h3>
+            </div>
+            <div id="profile-web-references" class="profile-section content-minor-section">
+              <h3 class="profile-sidebar-label content-minor-section-label">Web References</h3>
+              <div><a class="profile-web-reference">Prints shop</a></div>
+              <div><a class="profile-web-reference">Facebook</a></div>
+            </div>
+            <div id="profile-date" class="profile-section content-minor-section"><span class="profile-date-text">Member since:<span class="profile-date">Jan 10, 2013</span></span><a class="js-action-spam profile-spam">Mark As Span</a></div>
+          </div>
+          <div id="gallery" class="content-main cfix js-gallery">
+            <div class="profile-gallery-content-wrap">
+              <div class="profile-gallery-content js-profile-gallery-content">
                 <div data-id="{{item.dataId}}" data-ordinal="{{item.dataOrdinal}}" ng-repeat="item in itemLoad.items" class="js-item cover-block project-cover js-project-cover editable cfix first">
                   <div class="cover-img"><a href="{{item.coverImgLink}}" class="cover-img-link">
                       <div data-picture><img src="{{item.coverImgSrc}}" class="cover-img-el"></div></a></div>
@@ -162,42 +157,6 @@
                       <div class="cover-stat-wrap"><span class="cover-stat cover-stat-appreciations beicons-pre beicons-pre-thumb">{{item.appreciation}}</span><span class="cover-stat cover-stat-views beicons-pre beicons-pre-eye hide-phone">{{item.views}}</span><span class="featured tooltipi-container beicons-pre beicons-pre-featured-small"></span></div>
                       <div class="cover-fields"><a ng-repeat="tag in item" href="{{tag.link}}" class="field-link">{{tag.name}},</a></div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div ng-show="itemLoad.busy" class="loading">Loading...</div>
-            </div>
-            <div id="filters" class="border-box left">
-              <div id="sidebar-fields" class="filter-block hide-wip menu-closed">
-                <div class="list-header discover-sprite-pre">Popular Creative Fields</div>
-                <ul class="list-links">
-                  <li><a>Graphic Design</a></li>
-                  <li><a>Graphic Design</a></li>
-                  <li><a>Graphic Design</a></li>
-                  <li><a>Graphic Design  </a></li>
-                </ul>
-              </div>
-              <div class="filter-block">
-                <div id="search-container" class="form-item form-item-text be-placeholder ui-front"><span class="ui-helper-hidden-accessible"></span>
-                  <input class="form-text form-text form-search js-discover-search validate ui-autocomplete-input">
-                  <ul id="ul-id-1" name="search" type="text" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"></ul>
-                </div>
-              </div>
-              <div id="sidebar-fixed-sticky-wrapper" class="sticky">
-                <div id="sidebar-fixed">
-                  <div class="filter-block hide-wip">
-                    <div class="list-header hide-teams">Filter by</div>
-                    <ul id="filter-menu" class="block-menu hide-teams">
-                      <li class="filter">
-                        <div class="menu-item filter-schools discover-sprite">Schools</div>
-                      </li>
-                      <li class="filter filter-temp-last">
-                        <div class="menu-item filter-tools discover-sprite">Tool Used</div>
-                      </li>
-                      <li class="filter hide-users">
-                        <div class="menu-item filter-color discover-sprite">Color</div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>

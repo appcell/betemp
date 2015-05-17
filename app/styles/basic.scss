@@ -7,7 +7,12 @@ $default-font: normal normal normal 12px/16px 'Helvetica Neue',Helvetica,Arial,s
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face{
+    font-family:"SSSocial";
+    src:url("//a2.behance.net/fonts/Symbolset/ss-social-circle.eot?cb=490363228");
+    src:url("//a2.behance.net/fonts/Symbolset/ss-social-circle.eot?cb=490363228?#iefix") format("embedded-opentype"),url("//a2.behance.net/fonts/Symbolset/ss-social-circle.woff?cb=490363228") format("woff"),url("//a2.behance.net/fonts/Symbolset/ss-social-circle.ttf?cb=490363228") format("truetype"),url("//a2.behance.net/fonts/Symbolset/ss-social-circle.svg?cb=490363228#SSSocialCircle") format("svg");
+    font-weight:bold;font-style:normal;
+}
 *,
 *:before,
 *:after {
@@ -73,6 +78,9 @@ a, .fake-link {
   text-decoration: none;
   cursor: pointer;
 }
+a:hover, .fake-link:hover {
+  text-decoration: underline;
+}
 ul, ol, dl {
   margin: 0;
   padding: 0;
@@ -121,6 +129,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 36px;
   line-height: 45px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 22px;
 }
 :focus {
   outline: 0;
@@ -181,6 +193,9 @@ select {
   vertical-align: middle;
   white-space: nowrap;
 }
+.form-button-left-icon, .form-button-right-icon, .form-button-left-arrow, .form-button-right-arrow, .form-button-down-arrow {
+  padding: 0 10px;
+}
 
 // ====== DEFAULT ======
 .form-button-default {
@@ -219,7 +234,28 @@ select {
   line-height: 23px;
   padding: 0 12px;
 }
-
+.form-button-light-and-grey, .form-button-light-and-blue {
+  background: #f3f3f3;
+  background: -webkit-gradient(linear,0% 0%,0% 100%,from(white),to(#e8e8e8));
+  background: -webkit-linear-gradient(0% 0%,0% 100%,from(white),to(#e8e8e8));
+  background: -moz-linear-gradient(center top,white,#e8e8e8);
+  background: linear-gradient(#ffffff,#e8e8e8);
+  border-color: #d0d0d0;
+}
+.form-button-light-and-grey {
+  color: #444444;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+.form-button-red {
+  background: #e11c1c;
+  background: -webkit-gradient(linear,0% 0%,0% 100%,from(#f62f2f),to(#cc0909));
+  background: -webkit-linear-gradient(0% 0%,0% 100%,from(#f62f2f),to(#cc0909));
+  background: -moz-linear-gradient(center top,#f62f2f,#cc0909);
+  background: linear-gradient(#f62f2f,#cc0909);
+  border-color: #a70c0c;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.32);
+}
 // ====== OTHER STYLES ======
 .form-button-dark {
   background: #404040;
@@ -249,7 +285,17 @@ select {
 .job-button {
   margin-left: 10px;
 }
-
+.follow-button-container.following .form-button-icon-following, .follow-button-container.following .following, .no-has-touch .follow-button-container.following:hover .form-button-icon-unfollow, .no-has-touch .follow-button-container.following:hover .unfollow, .no-has-touch .follow-button-container.following.following-hold:hover .form-button-icon-following, .no-has-touch .follow-button-container.following.following-hold:hover .following {
+  display: inline-block;
+}
+.form-button-icon-follow:before, .form-button-icon-following:before, .form-button-icon-unfollow:before {
+  width: 14px;
+  height: 15px;
+  top: 3px;
+}
+.form-button-left-icon:before {
+  margin-right: 8px;
+}
 
 // ====== POPUP MENU ======
 .popup.shown {
@@ -433,4 +479,20 @@ select {
 }
 .list-links a:active {
   background: #cbcbcb;
+}
+
+// ====== SOCIAL ======
+.ss-social {
+  font-family: "SSSocial";
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  vertical-align: middle;
+  white-space: nowrap;
 }

@@ -5,6 +5,7 @@ html(lang="en", ng-app="NewApp")
     link(type="text/css",rel="stylesheet",href="/styles/basic.css")
     link(type="text/css",rel="stylesheet",href="/styles/layout.css")
     link(type="text/css",rel="stylesheet",href="/styles/icons.css")
+    link(type="text/css",rel="stylesheet",href="/styles/profile.css")
 
     script(src='bower_components/angular/angular.js')
     script(src="bower_components/jquery/dist/jquery.min.js")
@@ -77,93 +78,102 @@ html(lang="en", ng-app="NewApp")
       .toolbar
           
       #site-content
-      #profile-header-actions.layout-wrap.js-profile-header-actions
-        #sorts-container-sticky-wrapper.sticky
-          #sorts-container
-            #sorts.grid-site.js-sorts
-              span.sort.js-sort-content.sort-content.discover-sprite
-                span.js-sort-label.sort-label.beicons-pre.beicons-pre-grid Projects
-                .popup.menu.no-buttons.no-title
-                  .popup-inner-wrap
-                    .popup-content
-                      .list-header View
-                      ul.sort-content-list
-                        li
-                          a.beicons-pre.beicons-pre-grid.js-content-type.active Projects
-                        li
-                          a.beicons-pre.beicons-pre-wip.js-content-type Work in Progress
-                        li
-                          a.beicons-pre.beicons-pre-owner.js-content-type People
-                        li
-                          a.beicons-pre.beicons-pre-members.js-content-type Teams
-                    .popup-buttons.hide
-                
-              span.sort.js-sort-fields.sort-fields.hide-wip.discover-sprite
-                span.js-sort-label.sort-label.sort-label-fields All Creative Fields
-                .popup.menu.no-buttons.creative-fields
-                  .popup-inner-wrap
-                    .popup-content
-                      #fields-menu.cfix
-                        .submenu.left-menu.left
-                          .list-header Popular
-                          ul#popular-fields-list.js-fields-list
-                            li(ng-repeat='item in FieldItems')
-                              a(href='#{{item.dataKey}}') {{item.name}}
-                    
-              span.sort.js-sort-content.sort-featured.discover-sprite
-                span.js-sort-label.sort-label Featured
-                .popup.menu.no-buttons.reative-fields
-                  .popup-inner-wrap
-                    .popup-content
-                      #featured-menu.sort-menu.cfix.desktop-list
-                        .list-header Browse
-                        ul#browse-list.divided-list
-                          li.list-browse.sort-item-featured_date
-                            a(href="?sort=featured_date").discover-sprite-pre.discover-sprite.sort-item.sort-featured_date.active Featured
-                          li.list-browse.sort-item-appreciations
-                            a(href="?sort=appreciations").discover-sprite-pre.discover-sprite.sort-item.sort-appreciations Most Appreciated
-                          li.list-browse.sort-item-views
-                            a(href="?sort=views").discover-sprite-pre.discover-sprite.sort-item.sort-views Most Viewed
-                          li.list-browse.sort-item-comments
-                            a(href="?sort=comments").discover-sprite-pre.discover-sprite.sort-item.sort-comments Most Discussed
-                          li.list-browse.sort-item-published_date
-                            a(href="?sort=published_date").discover-sprite-pre.discover-sprite.sort-item.sort-published_date Most Recent
-                          li.list-browse.sort-item-followed.hide
-                            a(href="?sort=followed").discover-sprite-pre.discover-sprite.sort-item.sort-followed Most Followed
-
-              span.sort.js-sort-content.sort-location.discover-sprite
-                span.js-sort-label.sort-label Worldwide
-                .popup.menu.no-buttons.location-menu.shown
-                  .popup-inner-wrap
-                    .popup-content
-                      div.sort-menu.search-option
-                        div.search-option-header Location
-                        div.search-option-content
-                          div.country-container.form-item
-                              label Country
-                              select.js-country.country.form-select.ui-selectmenu-large(style="display: none;")
-                                option.form-option.form-option-empty(value="--") Select a Country
-                                option.form-option(value="United States") United States
-                              a.ui-selectmenu.ui-widget.ui-state-default.ui-selectmenu-dropdown.js-country.country.form-select.ui-selectmenu-large.form-option.form-option-empty.ui-state-active.ui-corner-top#ui-selectmenu-fa8af9c-button
-                                span.ui-selectmenu-status Select a Country
-                                span.ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s
-                          div.city-container.form-item.ui-front
-                              label City
-                              span.ui-helper-hidden-accessible
-                              input(type="text",disabled="disabled").js-city.city.form-text.form-text-normal.disabled.ui-autocomplete-input
-                        div.search-option-confirm.clear
-                          span.js-apply.form-button.form-button-small.form-button-default.left Apply
-                          span.js-clear.search-option-cancel.discover-sprite-pre.right.hide Clear
-                      
-                        
-            #breadcrumbs-container.listselector_selections
-            
-        #content-wrapper
-          #content-container.grid-site.cfix
-            #content.border-box.left.cfix.users-gallery-container.projects(infinite-scroll="itemLoad.nextPage()",infinite-scroll-disabled='itemLoad.busy', infinite-scroll-distance="0")
-              .discover-loading-spinner.loading-spinner.ignore-me
-                .spinner(aria-role='progressbar')
-              .covers
+        #profile-header-actions.layout-wrap.js-profile-header-actions
+          #navmenui-breadcrumbs.js-navmenui-breadcrumbs
+            span.breadcrumb-text
+              a Discover
+            span.rarr →
+            span.breadcrumb-text Violaine & Jeremy
+        #profile.content-container.layout-wrap
+          #profile-info.profile-section.content-minor-section.content-mobile-major-section
+            #profile-display-name
+              a Violaine & Jeremy
+            a(href="#")
+              img#profile-image(src="https://mir-s3-cdn-cf.behance.net/user/138/2051365.53b7661e86615.png")
+            #profile-details
+              #profile-company Violaine & Jeremy
+              .profile-location.has-website
+                a.profile-location-link.beicons-pre.beicons-pre-location(href='#') Paris, France
+              a#profile-website(href="#") violaineetjeremy.fr/
+              
+            #profile-actions
+              #profile-action-follow.js-profile-action-follow.profile-action
+                .user-follow.js-action-follow-user.follow-button-container
+                  a.form-button.js-form-button-follow.form-button-follow.form-button-default.form-button-left-icon.form-button-icon-follow Follow
+                  a.form-button.form-button-following.form-button-light-and-grey.form-button-left-icon.form-button-icon-following Following
+                  a.form-button.js-form-button-unfollow.form-button-unfollow.form-button-red.form-button-left-icon.form-button-icon-unfollow Unfollow
+              .profile-action.js-action-message-user.js-adobeid-signup(title='Message User')
+                a.form-button.form-button-light-and-grey.beicons-pre.beicons-pre-mail Message
+                  
+            span.js-nav-phone
+          #profile-stats.profile-section.content-minor-section.content-mobile-first-section.js-profile-stats
+            .profile-stat
+              .profile-stat-label.profile-sidebar-label.content-minor-secton-label.beicons-pre.beicons-pre-eye
+                span.stat-text Project View
+              .profile-stat-count
+                a.js-project-views-count 668016
+            .profile-stat
+              .profile-stat-label.profile-sidebar-label.content-minor-secton-label.beicons-pre.beicons-pre-thumb
+                span.stat-text Appreciations
+              .profile-stat-count
+                a.js-appreciations-count 57755
+            .profile-stat
+              .profile-stat-label.profile-sidebar-label.content-minor-secton-label.beicons-pre.beicons-pre-followers
+                span.stat-text Appreciations
+              .profile-stat-count
+                a.js-followers-count 57755
+            .profile-stat
+              .profile-stat-label.profile-sidebar-label.content-minor-secton-label.beicons-pre.beicons-pre-following
+                span.stat-text Appreciations
+              .profile-stat-count
+                a.js-following-count 57755
+          span.js-nav-desktop-tablet
+          #profile-nav.content-main.content-section-nav.js-profile-nav
+            .js-iscroll-wrap.profile-nav-inner.content-nav-inner
+              .profile-section-header.content-section-header.js-section-header.js-iscroll(style='width: 322px; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; -webkit-transform-origin: 0px 0px 0px; -webkit-transform: translate3d(0px, 0px, 0px);')
+                a.profile-section-header-item.content-section-nav-item.js-section.js-iscroll-item.show-tablet.show-phone.not-active Info
+                a.profile-section-header-item.content-section-nav-item.js-section.js-iscroll-item.active Projects
+                a.profile-section-header-item.content-section-nav-item.js-section.js-iscroll-item.not-active WIP
+                a.profile-section-header-item.content-section-nav-item.js-section.js-iscroll-item.not-active Appreciated
+              .profile-section-header.content-section-header.js-section-header.js-iscroll.profile-section-header-connections.hide
+              form#searchForm.js-search-form.profile-search.hide
+            .js-profile-collection-select.profile-collection-select.hide
+          #profile-info-wrap.js-profile-info-wrap.content-section-wrap
+            #profile-focus.profile-section.content-minor-section
+              h3.profile-sidebar-label.content-minor-section-label Focus
+              a.field Art Direction
+              a.field Art Direction
+              a.field Art Direction             
+            #profile-featured.profile-section.content-minor-section
+              h3.profile-sidebar-label.content-minor-section-label Featured In
+                span.featured-ribbon-wrap
+                  a(href="#")
+                    div
+                      div(data-src="{{item.dataSrc}}",data-title="{{item.title}}",data-class="featured-ribbon")
+                      img.featured-ribbon(src="https://a2.behance.net/img/galleries/ribbons/1x/net.png")
+            #profile-web.profile-section.content-minor-section
+              h3.profile-sidebar-label.content-minor-section-label On The Web
+                ul#profile-web-list
+                  li
+                    a.ss-social Facebook
+                  li
+                    a.ss-social Instagram
+            .profile-section.content-minor-section
+              h3.profile-sidebar-label.content-minor-section-label About.
+                Violaine et Jérémy
+            #profile-web-references.profile-section.content-minor-section
+              h3.profile-sidebar-label.content-minor-section-label Web References
+              div
+                a.profile-web-reference Prints shop
+              div
+                a.profile-web-reference Facebook
+            #profile-date.profile-section.content-minor-section
+              span.profile-date-text Member since:
+                span.profile-date Jan 10, 2013
+              a.js-action-spam.profile-spam Mark As Span
+          #gallery.content-main.cfix.js-gallery
+            .profile-gallery-content-wrap
+              .profile-gallery-content.js-profile-gallery-content
                 .js-item.cover-block.project-cover.js-project-cover.editable.cfix.first(data-id='{{item.dataId}}', data-ordinal='{{item.dataOrdinal}}', ng-repeat='item in itemLoad.items')
                   .cover-img
                     a.cover-img-link(href='{{item.coverImgLink}}')
@@ -185,38 +195,6 @@ html(lang="en", ng-app="NewApp")
                         span.featured.tooltipi-container.beicons-pre.beicons-pre-featured-small
                       .cover-fields
                         a.field-link(ng-repeat='tag in item', href='{{tag.link}}') {{tag.name}},
-              div(ng-show='itemLoad.busy').loading Loading...
-            
-            
-            
-            #filters.border-box.left
-              #sidebar-fields.filter-block.hide-wip.menu-closed
-                div.list-header.discover-sprite-pre Popular Creative Fields
-                ul.list-links
-                  li
-                    a Graphic Design
-                  li
-                    a Graphic Design
-                  li
-                    a Graphic Design
-                  li
-                    a Graphic Design  
-              .filter-block
-                #search-container.form-item.form-item-text.be-placeholder.ui-front
-                  span.ui-helper-hidden-accessible
-                  input.form-text.form-text.form-search.js-discover-search.validate.ui-autocomplete-input
-                  ul#ul-id-1.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all(name='search', type='text')
-                
-              #sidebar-fixed-sticky-wrapper.sticky
-                #sidebar-fixed
-                  .filter-block.hide-wip
-                    .list-header.hide-teams Filter by
-                    ul#filter-menu.block-menu.hide-teams
-                      li.filter
-                        .menu-item.filter-schools.discover-sprite Schools
-                      li.filter.filter-temp-last
-                        .menu-item.filter-tools.discover-sprite Tool Used
-                      li.filter.hide-users
-                        .menu-item.filter-color.discover-sprite Color
+
       #infinity-footer.js-footer
     #nav-basement.js-nav-basement

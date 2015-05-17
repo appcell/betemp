@@ -57,10 +57,39 @@
 .beicons-pre-prosite:before {
   content: 'W';
 }
-
-
-
-
+.beicons-pre-mail:before {
+  content: 'A';
+  top: 2px;
+}
+.beicons-pre-bell:before {
+  content: 'C';
+  top: 3px;
+}
+.beicons-pre-location:before {
+  content: 'B';
+  top: 2px;
+}
+.beicons-pre-mail:before {
+  content: 'A';
+  top: 2px;
+}
+.beicons-pre-eye:before {
+  content: '@';
+  left: -1px;
+  top: 3px;
+}
+.beicons-pre-thumb:before {
+  content: '?';
+  top: 2px;
+}
+.beicons-pre-followers:before {
+  content: '`';
+  top: 3px;
+}
+.beicons-pre-following:before {
+  content: '_';
+  top: 3px;
+}
 
 .sort-appreciations:before {
   background-position: -895px 0;
@@ -91,4 +120,17 @@
   background-position: -1239px 0;
   height: 14px;
   width: 14px;
+}
+
+.form-button-icon-follow:before {
+  background-position: -97px -111px;
+}
+.form-button-icon-following:before {
+  background-position: -116px -111px;
+}
+.form-button-icon-unfollow:before {
+  background-position: -323px -112px;
+}
+.profile-web-reference:after {
+  content: ' \2192';
 }
