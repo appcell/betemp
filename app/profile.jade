@@ -36,6 +36,7 @@ html(lang="en", ng-app="NewApp")
   body.logged-in.logged-in-1.corepacki.networki.responsive.profile.profile-page.show-cta.profile-creative.be-network.no-has-touch.has-placeholders.globalnav__external__no-touch(ng-controller="MainCtrl")
     nav#nav-wrap.js-nav-primary.dark-background.cannot-scrolled
       h1#logo
+        a#logo-link
       <!-- ======= -->
       ul#notification
         li#inbox-icon.notifications-icon.notifications-inbox-icon.js-email-menu.beicons-pre.beicons-pre-mail
@@ -68,6 +69,10 @@ html(lang="en", ng-app="NewApp")
           li.nav-item
             a.nav-item-link.active Jobs
             ul.nav-submenu
+              li.nav-item
+                a.nav-item-link.active.beicons-pre.beicons-pre-suitcase  Creative Jobs
+              li.nav-item
+                a.nav-item-link.active.beicons-pre.beicons-pre-add  Post a Job
           li.nav-joblist Hiring Talent? 
           a.job-button.js-job-button.form-button.form-button-small.form-button-dark Post a Job
       #nav-login
@@ -76,7 +81,7 @@ html(lang="en", ng-app="NewApp")
       a#top-panel-blocking
       .toolbar
           
-      #site-content
+      #site-content.view
         #profile-header-actions.layout-wrap.js-profile-header-actions
           #navmenui-breadcrumbs.js-navmenui-breadcrumbs
             span.breadcrumb-text

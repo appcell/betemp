@@ -28,7 +28,7 @@
   </head>
   <body ng-controller="MainCtrl" class="logged-in logged-in-1 corepacki networki responsive profile profile-page show-cta profile-creative be-network no-has-touch has-placeholders globalnav__external__no-touch">
     <nav id="nav-wrap" class="js-nav-primary dark-background cannot-scrolled">
-      <h1 id="logo"></h1><!-- ======= -->
+      <h1 id="logo"><a id="logo-link"></a></h1><!-- ======= -->
       <ul id="notification">
         <li id="inbox-icon" class="notifications-icon notifications-inbox-icon js-email-menu beicons-pre beicons-pre-mail">
           <div class="notifications-count">0</div>
@@ -55,7 +55,10 @@
             </ul>
           </li>
           <li class="nav-item"><a class="nav-item-link active">Jobs</a>
-            <ul class="nav-submenu"></ul>
+            <ul class="nav-submenu">
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-suitcase"> Creative Jobs</a></li>
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-add"> Post a Job</a></li>
+            </ul>
           </li>
           <li class="nav-joblist">Hiring Talent? </li><a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job</a>
         </ul>
@@ -64,7 +67,7 @@
     </nav>
     <div id="top-panel" class="slide-panel"><a id="top-panel-blocking"></a>
       <div class="toolbar"></div>
-      <div id="site-content">
+      <div id="site-content" class="view">
         <div id="profile-header-actions" class="layout-wrap js-profile-header-actions">
           <div id="navmenui-breadcrumbs" class="js-navmenui-breadcrumbs"><span class="breadcrumb-text"><a>Discover</a></span><span class="rarr">→</span><span class="breadcrumb-text">Violaine & Jeremy</span></div>
         </div>
