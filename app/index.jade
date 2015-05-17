@@ -6,15 +6,13 @@ html(lang="en", ng-app="NewApp")
     link(type="text/css",rel="stylesheet",href="/styles/layout.css")
     link(type="text/css",rel="stylesheet",href="/styles/icons.css")
 
-    script(src='bower_components/angular/angular.js')
-    script(src="bower_components/jquery/dist/jquery.min.js")
-    script(src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js")
-    script(src='scripts/app.js')
-    script(src='scripts/index.js')
+    //- script(src="bower_components/jquery/dist/jquery.min.js")
+    //- script(src='scripts/index.js')
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     script(src="bower_components/angular/angular.js")
+    script(src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js")
     script(src="bower_components/angular-animate/angular-animate.js")
     script(src="bower_components/angular-aria/angular-aria.js")
     script(src="bower_components/angular-cookies/angular-cookies.js")
@@ -53,25 +51,25 @@ html(lang="en", ng-app="NewApp")
           li.nav-item
             a.nav-item-link.active Jobs
             ul.nav-submenu
-          li.nav-joblist Hiring Talent? 
+          li.nav-joblist Hiring Talent?
           a.job-button.js-job-button.form-button.form-button-small.form-button-dark Post a Job
       #nav-upsell-wrap
-        ul#nav-upsell.nav-list Showcase & Discover Creative Work 
+        ul#nav-upsell.nav-list Showcase & Discover Creative Work
           a#sign-up-button.js-adobeid-signup.form-button.form-button-small.form-button-default Sign Up for Free
-          li.nav-joblist Hiring Talent? 
+          li.nav-joblist Hiring Talent?
             a.job-button.js-job-button.form-button.form-button-small.form-button-dark Post a Job?
       #nav-login
         a#login-link.js-adobeid-signin.beicons-pre.beicons-pre-privacy  log in
     #top-panel.slide-panel
       a#top-panel-blocking
       .toolbar
-      
+
       #showcase-and-discover.cta-header.dark-background
         h1.cta-header-title Showcase & Discover Creative Work
         span.hide-phone
           a.js-adobeid-signup.form-button.form-button-xlarge.form-button-default Sign Up
-          
-      #site-content
+
+      #site-content(ng-view)
         #sorts-container-sticky-wrapper.sticky
           #sorts-container
             #sorts.grid-site.js-sorts
@@ -91,7 +89,7 @@ html(lang="en", ng-app="NewApp")
                         li
                           a.beicons-pre.beicons-pre-members.js-content-type Teams
                     .popup-buttons.hide
-                
+
               span.sort.js-sort-fields.sort-fields.hide-wip.discover-sprite(sorter, sorttype="fields")
                 span.js-sort-label.sort-label.sort-label-fields All Creative Fields
                 .popup.menu.no-buttons.creative-fields(ng-class="{shown: sorters.fields}")
@@ -103,7 +101,7 @@ html(lang="en", ng-app="NewApp")
                           ul#popular-fields-list.js-fields-list
                             li(ng-repeat='item in FieldItems')
                               a(href='#{{item.dataKey}}') {{item.name}}
-                    
+
               span.sort.js-sort-content.sort-featured.discover-sprite(sorter, sorttype="featured")
                 span.js-sort-label.sort-label Featured
                 .popup.menu.no-buttons.reative-fields(ng-class="{shown: sorters.featured}")
@@ -148,10 +146,10 @@ html(lang="en", ng-app="NewApp")
                         div.search-option-confirm.clear
                           span.js-apply.form-button.form-button-small.form-button-default.left Apply
                           span.js-clear.search-option-cancel.discover-sprite-pre.right.hide Clear
-                      
-                        
+
+
             #breadcrumbs-container.listselector_selections
-            
+
         #content-wrapper
           #content-container.grid-site.cfix
             #content.border-box.left.cfix.users-gallery-container.projects(infinite-scroll="itemLoad.nextPage()",infinite-scroll-disabled='itemLoad.busy', infinite-scroll-distance="0")
@@ -180,9 +178,9 @@ html(lang="en", ng-app="NewApp")
                       .cover-fields
                         a.field-link(ng-repeat='tag in item', href='{{tag.link}}') {{tag.name}},
               div(ng-show='itemLoad.busy').loading Loading...
-            
-            
-            
+
+
+
             #filters.border-box.left
               #sidebar-fields.filter-block.hide-wip.menu-closed
                 div.list-header.discover-sprite-pre Popular Creative Fields
@@ -194,13 +192,13 @@ html(lang="en", ng-app="NewApp")
                   li
                     a Graphic Design
                   li
-                    a Graphic Design  
+                    a Graphic Design
               .filter-block
                 #search-container.form-item.form-item-text.be-placeholder.ui-front
                   span.ui-helper-hidden-accessible
                   input.form-text.form-text.form-search.js-discover-search.validate.ui-autocomplete-input
                   ul#ul-id-1.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all(name='search', type='text')
-                
+
               #sidebar-fixed-sticky-wrapper.sticky
                 #sidebar-fixed
                   .filter-block.hide-wip

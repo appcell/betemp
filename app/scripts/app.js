@@ -30,7 +30,11 @@ angular
         templateUrl: 'views/profile.html',
         controller: 'MainCtrl'
       })
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })

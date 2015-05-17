@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NewApp">
+  <head>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/styles/basic.css">
+    <link type="text/css" rel="stylesheet" href="/styles/layout.css">
+    <link type="text/css" rel="stylesheet" href="/styles/icons.css">
+    <link type="text/css" rel="stylesheet" href="/styles/gallery.css">
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script><!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/components/sorter.js"></script><!-- endbuild -->
+  </head>
+  <body ng-controller="MainCtrl" class="logged-out corepacki networki responsive section-gallery viewing-projects be-network no-has-touch has-placeholders globalnav__external__no-touch">
+    <nav id="nav-wrap" class="js-nav-primary dark-background">
+      <h1 id="logo"></h1>
+      <div id="nav-primary-wrap">
+        <ul id="nav-primary" class="nav-list">
+          <li class="nav-item"><a class="nav-item-link active">Discover</a>
+            <ul class="nav-submenu">
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-discover"> Search & Explore</a></li>
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-follow"> Creatives to Follow</a></li>
+              <li class="nav-item"><a class="nav-item-link active beicons-pre beicons-pre-follow"> Creatives to Follow</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-item-link active">Jobs</a>
+            <ul class="nav-submenu"></ul>
+          </li>
+          <li class="nav-joblist">Hiring Talent?</li><a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job</a>
+        </ul>
+      </div>
+      <div id="nav-upsell-wrap">
+        <ul id="nav-upsell" class="nav-list">Showcase & Discover Creative Work<a id="sign-up-button" class="js-adobeid-signup form-button form-button-small form-button-default">Sign Up for Free</a>
+          <li class="nav-joblist">Hiring Talent?<a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job?</a></li>
+        </ul>
+      </div>
+      <div id="nav-login"><a id="login-link" class="js-adobeid-signin beicons-pre beicons-pre-privacy"> log in</a></div>
+    </nav>
+    <div id="top-panel" class="slide-panel"><a id="top-panel-blocking"></a>
+      <div class="toolbar"></div>
+    </div>
+    <div id="top-panel" class="slide-panel"><a id="top-panel-blocking"></a>
+      <div id="site-content">
+        <div id="project-wrap" class="js-project-wrap v-5">
+          <div id="project" data-id="25640511" data-mature_content="0" data-mature_access="allowed" style="max-width: 1400px;" class="js-project breakpoint-comments">
+            <div id="project-header" class="unclickable-mask">
+              <div id="project-basic-info-wrap">
+                <div class="project-title js-project-title">
+                  <div id="project-name" class="beicons-pre beicons-pre-edit js-project-name">The Qontinent</div>
+                </div>
+                <div id="project-fields">
+                  <ul id="project-fields-list">
+                    <li class="project-fields-field"><a href="/search?field=122">Digital Art</a></li>
+                    <li class="project-fields-field"><a href="/search?field=44">Graphic Design</a></li>
+                    <li class="project-fields-field"><a href="/search?field=48">Illustration</a></li>
+                  </ul>
+                </div>
+                <div id="project-stats">
+                  <div class="project-stat beicons-pre beicons-pre-eye">6245</div>
+                  <div class="project-stat beicons-pre beicons-pre-thumb js-stats-appreciations">1335</div>
+                  <div class="project-stat beicons-pre beicons-pre-comment">92</div>
+                </div>
+                <div id="features">
+                  <div class="featured-ribbon tooltipi-container"><a href="https://www.behance.net/gallery/25640511/The-Qontinent">
+                      <picture>
+                        <source srcset="https://a2.behance.net/img/galleries/ribbons/2x/net@2x.png?cb=490363228" media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx)"><img src="https://a2.behance.net/img/galleries/ribbons/1x/net.png?cb=490363228">
+                      </picture></a></div>
+                </div>
+              </div>
+            </div>
+            <div id="primary-project-content" class="project-styles zero-top">
+              <div id="project-canvas" class="project-styles">
+                <div id="project-modules">
+                  <div id="project-spacer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABXgAAAABCAYAAABkHsaZAAAAH0lEQVRYw+3DAQkAAAwEoe9f+pZjoOCqqaqqqqr67wH2oViJHh1OqwAAAABJRU5ErkJggg=="></div>
+                  <div data-hd-src="https://m1.behance.net/rendition/modules/170515095/hd/6382cdf4d43e9f2e10a5e328f0f002a0.jpg" data-fancybox-group="gallery" href="https://m1.behance.net/rendition/modules/170515095/hd/6382cdf4d43e9f2e10a5e328f0f002a0.jpg" style="cursor: zoom-in;" class="js-project-module-image-hd project-module module image project-module-image image-full project-module-image-full">
+                    <div class="project-module-image-inner-wrap">
+                      <picture>
+                        <source srcset="https://m1.behance.net/rendition/modules/170515095/disp/6382cdf4d43e9f2e10a5e328f0f002a0.jpg?cb=490363228" media="(max-width: 600px)">
+                        <source srcset="https://m1.behance.net/rendition/modules/170515095/1400/6382cdf4d43e9f2e10a5e328f0f002a0.jpg?cb=490363228" media="(min-width: 601px)"><img src="https://m1.behance.net/rendition/modules/170515095/1400/6382cdf4d43e9f2e10a5e328f0f002a0.jpg?cb=490363228">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                  <div data-hd-src="https://m1.behance.net/rendition/modules/170515097/hd/6de9802d59c11af2e326c57647c568d6.jpg" data-fancybox-group="gallery" href="https://m1.behance.net/rendition/modules/170515097/hd/6de9802d59c11af2e326c57647c568d6.jpg" style="cursor: zoom-in;" class="js-project-module-image-hd project-module module image project-module-image image-full project-module-image-full">
+                    <div class="project-module-image-inner-wrap">
+                      <picture>
+                        <source srcset="https://m1.behance.net/rendition/modules/170515097/disp/6de9802d59c11af2e326c57647c568d6.jpg?cb=490363228" media="(max-width: 600px)">
+                        <source srcset="https://m1.behance.net/rendition/modules/170515097/1400/6de9802d59c11af2e326c57647c568d6.jpg?cb=490363228" media="(min-width: 601px)"><img src="https://m1.behance.net/rendition/modules/170515097/1400/6de9802d59c11af2e326c57647c568d6.jpg?cb=490363228">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                  <div data-hd-src="https://m1.behance.net/rendition/modules/170515099/hd/13c7b1952ed2afc2ffdbd3d471734163.jpg" data-fancybox-group="gallery" href="https://m1.behance.net/rendition/modules/170515099/hd/13c7b1952ed2afc2ffdbd3d471734163.jpg" style="cursor: zoom-in;" class="js-project-module-image-hd project-module module image project-module-image image-full project-module-image-full">
+                    <div class="project-module-image-inner-wrap">
+                      <picture>
+                        <source srcset="https://m1.behance.net/rendition/modules/170515099/disp/13c7b1952ed2afc2ffdbd3d471734163.jpg?cb=490363228" media="(max-width: 600px)">
+                        <source srcset="https://m1.behance.net/rendition/modules/170515099/1400/13c7b1952ed2afc2ffdbd3d471734163.jpg?cb=490363228" media="(min-width: 601px)"><img src="https://m1.behance.net/rendition/modules/170515099/1400/13c7b1952ed2afc2ffdbd3d471734163.jpg?cb=490363228">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                  <div data-hd-src="https://m1.behance.net/rendition/modules/170518025/hd/aaa1d1d2148c9ebd1b9e9a7773e20203.jpg" data-fancybox-group="gallery" href="https://m1.behance.net/rendition/modules/170518025/hd/aaa1d1d2148c9ebd1b9e9a7773e20203.jpg" style="cursor: zoom-in;" class="js-project-module-image-hd project-module module image project-module-image image-full project-module-image-full">
+                    <div class="project-module-image-inner-wrap">
+                      <picture>
+                        <source srcset="https://m1.behance.net/rendition/modules/170518025/disp/aaa1d1d2148c9ebd1b9e9a7773e20203.jpg?cb=490363228" media="(max-width: 600px)">
+                        <source srcset="https://m1.behance.net/rendition/modules/170518025/1400/aaa1d1d2148c9ebd1b9e9a7773e20203.jpg?cb=490363228" media="(min-width: 601px)"><img src="https://m1.behance.net/rendition/modules/170518025/1400/aaa1d1d2148c9ebd1b9e9a7773e20203.jpg?cb=490363228">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                  <div data-hd-src="https://m1.behance.net/rendition/modules/170518023/hd/ac49da42005e0fd050fa987fd7557da7.jpg" data-fancybox-group="gallery" href="https://m1.behance.net/rendition/modules/170518023/hd/ac49da42005e0fd050fa987fd7557da7.jpg" style="cursor: zoom-in;" class="js-project-module-image-hd project-module module image project-module-image image-full project-module-image-full">
+                    <div class="project-module-image-inner-wrap">
+                      <picture>
+                        <source srcset="https://m1.behance.net/rendition/modules/170518023/disp/ac49da42005e0fd050fa987fd7557da7.jpg?cb=490363228" media="(max-width: 600px)">
+                        <source srcset="https://m1.behance.net/rendition/modules/170518023/1400/ac49da42005e0fd050fa987fd7557da7.jpg?cb=490363228" media="(min-width: 601px)"><img src="https://m1.behance.net/rendition/modules/170518023/1400/ac49da42005e0fd050fa987fd7557da7.jpg?cb=490363228">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                  <div class="project-module module image project-module-image">
+                    <div class="project-module-image-inner-wrap">
+                      <picture>
+                        <source srcset="https://m1.behance.net/rendition/modules/170520339/disp/1d395fecaa324ef2569caabe0133d9db.gif?cb=490363228" media="(max-width: 633px)"><img src="https://m1.behance.net/rendition/modules/170520339/disp/1d395fecaa324ef2569caabe0133d9db.gif?cb=490363228">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                  <div data-hd-src="https://m1.behance.net/rendition/modules/170518027/hd/1e3c68bfce5c21bc7e72aabd41358d6e.jpg" data-fancybox-group="gallery" href="https://m1.behance.net/rendition/modules/170518027/hd/1e3c68bfce5c21bc7e72aabd41358d6e.jpg" style="cursor: zoom-in;" class="js-project-module-image-hd project-module module image project-module-image image-full project-module-image-full">
+                    <div class="project-module-image-inner-wrap">
+                      <picture>
+                        <source srcset="https://m1.behance.net/rendition/modules/170518027/disp/1e3c68bfce5c21bc7e72aabd41358d6e.jpg?cb=490363228" media="(max-width: 600px)">
+                        <source srcset="https://m1.behance.net/rendition/modules/170518027/1400/1e3c68bfce5c21bc7e72aabd41358d6e.jpg?cb=490363228" media="(min-width: 601px)"><img src="https://m1.behance.net/rendition/modules/170518027/1400/1e3c68bfce5c21bc7e72aabd41358d6e.jpg?cb=490363228">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="spacer">
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <div id="appreciation" class="show-on-preview unclickable-mask appreciation-button js-appreciate">
+                  <div id="sticker">
+                    <div class="thumb beicons-pre beicons-pre-thumb"></div>
+                    <div class="text">Thank You!</div>
+                  </div>
+                  <div class="js-appreciation-date project-appreciation-date beicons-pre beicons-pre-thumb"></div>
+                </div>
+              </div>
+            </div>
+            <div id="project-owner-bar" class="cfix show-on-preview unclickable-mask">
+              <div id="project-owner-bar-inner">
+                <div id="project-owner-bar-info">
+                  <div class="project-owner-info single-owner-info project-owner-info--owner-bar">
+                    <div class="profile-list"><a href="https://www.behance.net/frenchtoast" data-id="2076627" class="normal-link profile-list-image-wrap js-mini-profile"><img src="https://mir-s3-cdn-cf.behance.net/user/115/2076627.53b784b2141f3.jpg" class="profile-list-image"></a>
+                      <div class="profile-list-info profile-list-info-row">
+                        <div class="profile-list-name"><a data-id="2076627" href="https://www.behance.net/frenchtoast" class="normal-link js-mini-profile">French Toast</a></div>
+                        <div class="profile-location"><a href="/search?content=users&amp;sort=appreciations&amp;country=BE&amp;city=Li%C3%A8ge" class="profile-list-location-link beicons-pre beicons-pre-location">Li&egrave;ge, Belgium</a></div>
+                      </div>
+                    </div>
+                    <div class="project-owner-actions dark-background">
+                      <div class="user-follow js-action-follow-user follow-button-container"><a class="form-button form-button-follow form-button-default form-button-left-icon form-button-icon-follow">Follow</a></div>
+                      <div class="profile-action user-message"><a title="Message User" data-contact_name="French Toast" data-contact_id="2076627" unselectable="on" class="form-button-light-and-grey form-button js-action-message-user js-adobeid-signup beicons-pre beicons-pre-mail">Message</a></div>
+                    </div>
+                  </div><span class="complete">Complete
+                    <Profile>&rarr;</Profile></span>
+                </div>
+              </div>
+            </div>
+            <div id="other-projects" class="unclickable-mask">
+              <div data-id="24198175" class="js-item cover-block project-cover js-project-cover editable cfix">
+                <div class="cover-img"><a href="https://www.behance.net/gallery/24198175/Metronome-Jazz-Club" class="cover-img-link">
+                    <picture class="cover-img-el">
+                      <source srcset="https://mir-s3-cdn-cf.behance.net/projects/202/3949a524198175.552f7476929f3.png, https://mir-s3-cdn-cf.behance.net/projects/404/3949a524198175.552f7476929f3.png 2x" media="(-webkit-min-device-pixel-ratio: 1.3),                      (min--moz-device-pixel-ratio: 1.3),                      (-o-min-device-pixel-ratio: 4/3),                      (min-device-pixel-ratio: 1.3),                      (min-resolution: 1.3dppx)">
+                      <!--if IE 9--><img srcset="https://mir-s3-cdn-cf.behance.net/projects/202/3949a524198175.552f7476929f3.png, https://mir-s3-cdn-cf.behance.net/projects/404/3949a524198175.552f7476929f3.png 2x" alt="Metronome Jazz Club">
+                    </picture></a></div>
+                <div class="cover-info-stats">
+                  <div class="cover-info">
+                    <div class="cover-name"><a href="https://www.behance.net/gallery/24198175/Metronome-Jazz-Club" class="projectName cover-name-link">Metronome Jazz Club</a></div>
+                    <div class="cover-by-wrap">
+                      <div class="cover-by">by</div>
+                      <div class="cover-by-link"><a href="https://www.behance.net/frenchtoast" class="text-ellipsis single-owner-link"><span data-id="2076627" class="js-mini-profile">French Toast</span></a></div>
+                    </div>
+                  </div>
+                  <div class="cover-stat-fields-wrap">
+                    <div class="cover-stat-wrap"><span class="cover-stat cover-stat-appreciations beicons-pre beicons-pre-thumb">263</span></div>
+                    <div class="cover-fields"><a href="/search?field=109" title="Branding" class="field-link">Branding,</a><a href="/search?field=44" title="Graphic Design" class="field-link">Graphic Design</a></div>
+                  </div>
+                </div>
+              </div>
+              <div data-id="20885571" class="js-item cover-block project-cover js-project-cover editable cfix">
+                <div class="cover-img"><a href="https://www.behance.net/gallery/20885571/Brussels-HIP-HOP" class="cover-img-link">
+                    <picture class="cover-img-el">
+                      <!--if IE 9
+                      video(style='display: none;')
+                      
+                      -->
+                      <source srcset="https://mir-s3-cdn-cf.behance.net/projects/202/20885571.5485991252ce0.png, https://mir-s3-cdn-cf.behance.net/projects/404/20885571.5485991252ce0.png 2x" media="(-webkit-min-device-pixel-ratio: 1.3),                      (min--moz-device-pixel-ratio: 1.3),                      (-o-min-device-pixel-ratio: 4/3),                      (min-device-pixel-ratio: 1.3),                      (min-resolution: 1.3dppx)">
+                      <!--if IE 9--><img srcset="https://mir-s3-cdn-cf.behance.net/projects/202/20885571.5485991252ce0.png, https://mir-s3-cdn-cf.behance.net/projects/404/20885571.5485991252ce0.png 2x" alt="Brussels HIP HOP">
+                    </picture></a></div>
+                <div class="cover-info-stats">
+                  <div class="cover-info">
+                    <div class="cover-name"><a href="https://www.behance.net/gallery/20885571/Brussels-HIP-HOP" class="projectName cover-name-link">Brussels HIP HOP</a></div>
+                    <div class="cover-by-wrap">
+                      <div class="cover-by">by</div>
+                      <div class="cover-by-link"><a href="https://www.behance.net/frenchtoast" class="text-ellipsis single-owner-link"><span data-id="2076627" class="js-mini-profile">French Toast</span></a></div>
+                    </div>
+                  </div>
+                  <div class="cover-stat-fields-wrap">
+                    <div class="cover-stat-wrap"><span class="cover-stat cover-stat-appreciations beicons-pre beicons-pre-thumb">1122</span></div>
+                    <div class="cover-fields"><a href="/search?field=44" title="Graphic Design" class="field-link">Graphic Design,</a><a href="/search?field=48" title="Illustration" class="field-link">Illustration</a></div>
+                  </div>
+                </div>
+              </div>
+              <div data-id="19977995" class="js-item cover-block project-cover js-project-cover editable cfix">
+                <div class="cover-img"><a href="https://www.behance.net/gallery/19977995/The-Titans" class="cover-img-link">
+                    <picture class="cover-img-el">
+                      <source srcset="https://mir-s3-cdn-cf.behance.net/projects/202/19977995.54462637d3aad.png, https://mir-s3-cdn-cf.behance.net/projects/404/19977995.54462637d3aad.png 2x" media="(-webkit-min-device-pixel-ratio: 1.3),                      (min--moz-device-pixel-ratio: 1.3),                      (-o-min-device-pixel-ratio: 4/3),                      (min-device-pixel-ratio: 1.3),                      (min-resolution: 1.3dppx)">
+                      <!--if IE 9--><img srcset="https://mir-s3-cdn-cf.behance.net/projects/202/19977995.54462637d3aad.png, https://mir-s3-cdn-cf.behance.net/projects/404/19977995.54462637d3aad.png 2x" alt="The Titans">
+                    </picture></a></div>
+                <div class="cover-info-stats">
+                  <div class="cover-info">
+                    <div class="cover-name"><a href="https://www.behance.net/gallery/19977995/The-Titans" class="projectName cover-name-link">The Titans</a></div>
+                    <div class="cover-by-wrap">
+                      <div class="cover-by">by</div>
+                      <div class="cover-by-link"><a href="https://www.behance.net/frenchtoast" class="text-ellipsis single-owner-link"><span data-id="2076627" class="js-mini-profile">French Toast</span></a></div>
+                    </div>
+                  </div>
+                  <div class="cover-stat-fields-wrap">
+                    <div class="cover-stat-wrap"><span class="cover-stat cover-stat-appreciations beicons-pre beicons-pre-thumb">1163</span></div>
+                    <div class="cover-fields"><a href="/search?field=122" title="Digital Art" class="field-link">Digital Art,</a><a href="/search?field=44" title="Graphic Design" class="field-link">Graphic Design</a></div>
+                  </div>
+                </div>
+              </div>
+              <div data-id="19076515" class="js-item cover-block project-cover js-project-cover editable cfix">
+                <div class="cover-img"><a href="https://www.behance.net/gallery/19076515/POWR" class="cover-img-link">
+                    <picture class="cover-img-el">
+                      <source srcset="https://mir-s3-cdn-cf.behance.net/projects/202/19076515.548ee22a7ccb7.png, https://mir-s3-cdn-cf.behance.net/projects/404/19076515.548ee22a7ccb7.png 2x" media="(-webkit-min-device-pixel-ratio: 1.3),                      (min--moz-device-pixel-ratio: 1.3),                      (-o-min-device-pixel-ratio: 4/3),                      (min-device-pixel-ratio: 1.3),                      (min-resolution: 1.3dppx)">
+                      <!--if IE 9--><img srcset="https://mir-s3-cdn-cf.behance.net/projects/202/19076515.548ee22a7ccb7.png, https://mir-s3-cdn-cf.behance.net/projects/404/19076515.548ee22a7ccb7.png 2x" alt="POW'R">
+                    </picture></a></div>
+                <div class="cover-info-stats">
+                  <div class="cover-info">
+                    <div class="cover-name"><a href="https://www.behance.net/gallery/19076515/POWR" class="projectName cover-name-link">POW&apos;R</a></div>
+                    <div class="cover-by-wrap">
+                      <div class="cover-by">by</div>
+                      <div class="cover-by-link"><a href="https://www.behance.net/frenchtoast" class="text-ellipsis single-owner-link"><span data-id="2076627" class="js-mini-profile">French Toast</span></a></div>
+                    </div>
+                  </div>
+                  <div class="cover-stat-fields-wrap">
+                    <div class="cover-stat-wrap"><span class="cover-stat cover-stat-appreciations beicons-pre beicons-pre-thumb">1650</span></div>
+                    <div class="cover-fields"><a href="/search?field=109" title="Branding" class="field-link">Branding</a><a href="/search?field=132" title="UI/UX" class="field-link">UI/UX</a></div>
+                  </div>
+                </div>
+              </div>
+              <div data-id="13061731" class="js-item cover-block project-cover js-project-cover editable cfix">
+                <div class="cover-img"><a href="https://www.behance.net/gallery/13061731/Welo-Identity" class="cover-img-link">
+                    <picture class="cover-img-el">
+                      <!--if IE 9
+                      video(style='display: none;')
+                      
+                      -->
+                      <source srcset="https://mir-s3-cdn-cf.behance.net/projects/202/13061731.548389d5bdff0.png, https://mir-s3-cdn-cf.behance.net/projects/404/13061731.548389d5bdff0.png 2x" media="(-webkit-min-device-pixel-ratio: 1.3),                      (min--moz-device-pixel-ratio: 1.3),                      (-o-min-device-pixel-ratio: 4/3),                      (min-device-pixel-ratio: 1.3),                      (min-resolution: 1.3dppx)">
+                      <!--if IE 9--><img srcset="https://mir-s3-cdn-cf.behance.net/projects/202/13061731.548389d5bdff0.png, https://mir-s3-cdn-cf.behance.net/projects/404/13061731.548389d5bdff0.png 2x" alt="Welo Identity">
+                    </picture></a></div>
+                <div class="cover-info-stats">
+                  <div class="cover-info">
+                    <div class="cover-name"><a href="https://www.behance.net/gallery/13061731/Welo-Identity" class="projectName cover-name-link">Welo Identity</a></div>
+                    <div class="cover-by-wrap">
+                      <div class="cover-by">by</div>
+                      <div class="cover-by-link"><a href="https://www.behance.net/frenchtoast" class="text-ellipsis single-owner-link"><span data-id="2076627" class="js-mini-profile">French Toast</span></a></div>
+                    </div>
+                  </div>
+                  <div class="cover-stat-fields-wrap">
+                    <div class="cover-stat-wrap"><span class="cover-stat cover-stat-appreciations beicons-pre beicons-pre-thumb">4731</span></div>
+                    <div class="cover-fields"><a href="/search?field=109" title="Branding" class="field-link">Branding</a><a href="/search?field=44" title="Graphic Design" class="field-link">Graphic Design</a></div>
+                  </div>
+                </div>
+              </div><a href="https://www.behance.net/frenchtoast" class="view-profile show-phone">View Complete Profile &rarr;</a>
+            </div>
+            <div id="project-footer" class="show-on-preview unclickable-mask cfix">
+              <div id="project-footer-inner">
+                <div id="project-block-footer-comments" class="project-block">
+                  <h3 class="project-block-header">Comments<span class="js-comments-total">(92)</span></h3>
+                  <div class="post-comment-logged-out">You must<a class="js-adobeid-signup link-login fake-link">sign up to join the conversation.</a></div>
+                  <div>
+                    <ul class="js-comments-list comments-list">
+                      <li data-id="21130573" style="display: list-item;" class="comment-container cfix user-comment"><a href="https://www.behance.net/Madjid-" class="comment-user-image-link left"><img data-id="5270781" src="https://mir-s3-cdn-cf.behance.net/user/50/586de85270781.55398ee218661.jpg" class="comment-user-image js-mini-profile"></a>
+                        <div class="comment-text-container left relative">
+                          <div class="comment-user-date-wrap ui-corner cfix"><a data-id="5270781" href="https://www.behance.net/" class="user-name-link bold js-mini-profile">Madjid Hadj Kouider</a><span class="comment-date">About 36 minutes ago</span></div>
+                          <div class="comment-text-wrap">
+                            <div class="comment-text">Please check out my work here<a rel="nofollow" href="http://www.behance.net/Madjid-" target="_blank">https://www.behance.net/Madjid-</a></div>
+                          </div>
+                        </div>
+                        <div class="comment-actions"></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="project-sidebar" class="show-on-preview unclickable-mask js-project-sidebar-wrap">
+            <div class="project-sidebar-spacer">
+              <div class="js-project-sidebar sticky-project-sidebar">
+                <div class="sidebar-group">
+                  <div id="project-block-sidebar-owner" class="project-block">
+                    <h3 class="project-block-header">Project by</h3>
+                    <div class="project-owner-info single-owner-info project-owner-info--header">
+                      <div class="profile-list"><a href="https://www.behance.net/frenchtoast" data-id="2076627" class="normal-link profile-list-image-wrap js-mini-profile"><img src="https://mir-s3-cdn-cf.behance.net/user/115/2076627.53b784b2141f3.jpg" class="profile-list-image"></a>
+                        <div class="profile-list-info profile-list-info-row">
+                          <div class="profile-list-name"><a data-id="2076627" href="https://www.behance.net/frenchtoast" class="normal-link js-mini-profile">French Toast</a></div>
+                          <div class="profile-location"><a href="/search?content=users&amp;sort=appreciations&amp;country=BE&amp;city=Li%C3%A8ge" class="profile-list-location-link beicons-pre beicons-pre-location">Li&egrave;ge, Belgium</a></div>
+                        </div>
+                      </div>
+                      <div class="project-owner-actions">
+                        <div class="user-follow js-action-follow-user follow-button-container"><a class="form-button form-button-follow form-button-default form-button-left-icon form-button-icon-follow">Follow</a></div>
+                        <div class="profile-action user-message"><a title="Message User" data-contact_name="French Toast" data-contact_id="2076627" unselectable="on" class="form-button-light-and-grey form-button js-action-message-user js-adobeid-signup beicons-pre beicons-pre-mail">Message</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="project-block-sidebar-about" class="project-block hide-sticky">
+                    <h3 class="project-block-header">About</h3>
+                    <div class="variable-text variable-text-short js-more-toggle">
+                      The Qontinent: The Last Resort
+                      The Qontinent is a hard dance outdoor festival taking place in Belgium .
+                      This year theme is The Last Resort . We &mldr;
+                      span.js-more-toggle-link.fake-link Read More
+                    </div>
+                    <div style="overflow: hidden;" class="variable-text variable-text-full hide">
+                      The Qontinent: The Last Resort
+                      The Qontinent is a hard dance outdoor festival taking place in Belgium .
+                      This year theme is The Last Resort . We tried to find a good balance between some post apocaliptic feeling and a sunny &amp; warm atmosphere .
+                      We got inspired by illustrators like Olly Moss. We tried to combine their approach with our  digital art style.<span class="js-more-toggle-link fake-link">Read Less</span>
+                    </div>
+                    <div class="project-published"><span data-timestamp="1430920765" class="js-updating-timestamp">May 6, 2015</span></div>
+                  </div>
+                </div>
+                <div class="sidebar-group sticky-sidebar-buttons show-sticky">
+                  <div class="project-block">
+                    <div class="appreciation-button js-appreciate">
+                      <div class="form-item form-item-a form-item-appreciate"><a unselectable="on" tabindex="0" class="form-button thumb form-button-default form-button-large"><span class="beicons-pre beicons-pre-thumb">Appreciate Project</span></a></div>
+                      <div class="form-item form-item-a form-item-thanks"><a unselectable="on" tabindex="0" class="form-button text form-button-dark form-button-large"><span>Thank you!</span></a></div>
+                      <div class="js-appreciation-date project-appreciation-date beicons-pre beicons-pre-thumb"></div>
+                    </div>
+                    <div class="form-item form-item-a"><a data-id="25640511" unselectable="on" tabindex="0" class="form-button form-button-light-and-blue form-button-large js-action-collection"><span class="beicons-pre beicons-pre-collection">Add to Collection</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

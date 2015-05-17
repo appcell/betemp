@@ -5,13 +5,10 @@
     <link type="text/css" rel="stylesheet" href="/styles/basic.css">
     <link type="text/css" rel="stylesheet" href="/styles/layout.css">
     <link type="text/css" rel="stylesheet" href="/styles/icons.css">
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/index.js"></script><!-- build:js(.) scripts/vendor.js -->
+    <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -42,12 +39,12 @@
           <li class="nav-item"><a class="nav-item-link active">Jobs</a>
             <ul class="nav-submenu"></ul>
           </li>
-          <li class="nav-joblist">Hiring Talent? </li><a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job</a>
+          <li class="nav-joblist">Hiring Talent?</li><a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job</a>
         </ul>
       </div>
       <div id="nav-upsell-wrap">
-        <ul id="nav-upsell" class="nav-list">Showcase & Discover Creative Work <a id="sign-up-button" class="js-adobeid-signup form-button form-button-small form-button-default">Sign Up for Free</a>
-          <li class="nav-joblist">Hiring Talent? <a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job?</a></li>
+        <ul id="nav-upsell" class="nav-list">Showcase & Discover Creative Work<a id="sign-up-button" class="js-adobeid-signup form-button form-button-small form-button-default">Sign Up for Free</a>
+          <li class="nav-joblist">Hiring Talent?<a class="job-button js-job-button form-button form-button-small form-button-dark">Post a Job?</a></li>
         </ul>
       </div>
       <div id="nav-login"><a id="login-link" class="js-adobeid-signin beicons-pre beicons-pre-privacy"> log in</a></div>
@@ -57,7 +54,7 @@
       <div id="showcase-and-discover" class="cta-header dark-background">
         <h1 class="cta-header-title">Showcase & Discover Creative Work</h1><span class="hide-phone"><a class="js-adobeid-signup form-button form-button-xlarge form-button-default">Sign Up</a></span>
       </div>
-      <div id="site-content">
+      <div id="site-content" ng-view>
         <div id="sorts-container-sticky-wrapper" class="sticky">
           <div id="sorts-container">
             <div id="sorts" class="grid-site js-sorts"><span sorter sorttype="content" class="sort js-sort-content sort-content discover-sprite"><span class="js-sort-label sort-label beicons-pre beicons-pre-grid">Projects</span>
@@ -166,7 +163,7 @@
                   <li><a>Graphic Design</a></li>
                   <li><a>Graphic Design</a></li>
                   <li><a>Graphic Design</a></li>
-                  <li><a>Graphic Design  </a></li>
+                  <li><a>Graphic Design</a></li>
                 </ul>
               </div>
               <div class="filter-block">
