@@ -1,0 +1,104 @@
+
+.discover-sprite-pre:before, .discover-sprite:after, .autocomplete_field_wrap:before, .search-option-content:before, .crumb .listselector-selection-display:before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  background: url("//a2.behance.net/img/sprites/discover.png?cb=490363228") no-repeat;
+}
+
+.beicons, .beicons-pre:before {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  font-family: 'BeIcons';
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal !important;
+  line-height: 0;
+  margin-right: 5px;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  top: 1px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.discover-sprite-pre:before, .discover-sprite:after, .autocomplete_field_wrap:before, .search-option-content:before, .crumb .listselector-selection-display:before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  background: url("//a2.behance.net/img/sprites/discover.png?cb=490363228") no-repeat;
+}
+.filter-schools:after {
+  background-position: -739px 0;
+  height: 13px;
+  width: 16px;
+}
+.filter-schools:hover:after {
+  background-position: -713px 0;
+  height: 13px;
+  width: 16px;
+}
+.filter-schools:after {
+  margin-right: -2px;
+  background-position: -713px 0;
+}
+.beicons-pre-discover:before {
+  content: 'a';
+}
+.beicons-pre-follow:before {
+  content: '_';
+}
+.beicons-pre-badge:before {
+  content: '8';
+}
+.beicons-pre-suitcase:before {
+  content: 'Z';
+}
+.beicons-pre-add:before {
+  content: 'g';
+}
+.beicons-pre-grid:before {
+  content: ':';
+  top: 3px;
+}
+.beicons-pre-wip:before {
+  content: 'S';
+  top: 2px;
+}
+.beicons-pre-owner:before {
+  content: '^';
+}
+.beicons-pre-members:before {
+  content: ']';
+}
+.sort-appreciations:before {
+  background-position: -895px 0;
+  height: 12px;
+  width: 13px;
+}
+.sort-featured_date:before {
+  background-position: -1028px 0;
+  height: 15px;
+  width: 12px;
+}
+.sort-featured_date.active:before {
+  background-position: -984px 0;
+  height: 15px;
+  width: 12px;
+}
+.sort-views:before {
+  background-position: -1464px 0;
+  height: 10px;
+  width: 14px;
+}
+.sort-comments:before {
+  background-position: -962px 0;
+  height: 13px;
+  width: 12px;
+}
+.sort-published_date:before {
+  background-position: -1239px 0;
+  height: 14px;
+  width: 14px;
+}

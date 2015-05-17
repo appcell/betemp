@@ -1,0 +1,134 @@
+$default-color: #2b2b2b;
+$default-font: normal normal normal 12px/16px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+@font-face {
+    font-family: 'BeIcons';
+    src: url("//a2.behance.net/fonts/BeIcons/BeIcons.eot?cb=1382869889");
+    src: url("//a2.behance.net/fonts/BeIcons/BeIcons.eot?cb=1382869889?#iefix") format("embedded-opentype"), url("//a2.behance.net/fonts/BeIcons/BeIcons.woff?cb=1382869889") format("woff"), url("//a2.behance.net/fonts/BeIcons/BeIcons.ttf?cb=1382869889") format("truetype"), url("//a2.behance.net/fonts/BeIcons/BeIcons.svg?cb=1382869889#Behance") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+}
+html, body {
+  background: #f4f4f4;
+}
+body, .default-color {
+  color: $default-color;
+  font: $default-font;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.grid-site {
+  max-width: 1593px;
+}
+
+.verify-warning, .grid-site {
+  margin: auto;
+  // max-width: 1145px;
+  width: 100%;
+}
+
+.cfix {
+  zoom: 1;
+}
+.cfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+a, .fake-link {
+  color: #1769ff;
+}
+a, .fake-link {
+  color: #005CFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul, ol, dl {
+  margin: 0;
+  padding: 0;
+    list-style: none;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, ul, li, ol, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+ // font-size: 100%;
+}
+.form-item {
+  margin: 10px 0;
+  position: relative;
+}
+.form-text {
+  height: 16px;
+}
+.form-text, .form-textarea, .form-password {
+  -webkit-appearance: none;
+}
+.form-text, .form-textarea {
+  background: #fff;
+  border-color: #cfcfcf;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px -5px rgba(0,0,0,0.3) inset;
+  width: 160px;
+  padding: 6px;
+  border: 1px solid #acacac;
+  background-color: #fff;
+  color: #3b3b3b;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+abbr, acronym, address, caption, cite, code, dfn, em, strong, th, var, h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+}
+h1 {
+  font-size: 36px;
+  line-height: 45px;
+}
+:focus {
+  outline: 0;
+}
+.loading {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+input, textarea, select, optgroup, option, button {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background: #fff;
+}
+select {
+  visibility: hidden;
+}
+.clear {
+  clear: both;
+}
