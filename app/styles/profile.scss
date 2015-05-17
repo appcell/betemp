@@ -198,7 +198,7 @@
   margin: 18px 0 0;
 }
 #profile-action-follow {
-  padding-right: 10px;
+  padding-right: 6px;
 }
 .follow-button-container {
   display: inline-block;
@@ -208,9 +208,27 @@
   text-align: center;
   width: 155px;
 }
-
-
-
+.user-follow.following .form-button-following {
+  display: inline-block;
+}
+.user-follow.following .form-button-follow,
+.user-follow.following .form-button-unfollow {
+  display: none;
+}
+.user-follow.unfollow .form-button-unfollow {
+  display: inline-block;
+}
+.user-follow.unfollow .form-button-follow,
+.user-follow.unfollow .form-button-following {
+  display: none;
+}
+.user-follow.follow .form-button-follow {
+  display: inline-block;
+}
+.user-follow.follow .form-button-unfollow,
+.user-follow.follow .form-button-following {
+  display: none;
+}
 
 
 
@@ -328,6 +346,11 @@
   overflow: hidden;
   vertical-align: top;
   width: 28px;
+}
+#profile-featured .featured-ribbon {
+  left: -2px;
+  position: relative;
+  top: -20px;
 }
 #profile-web-list {
   margin-top: 5px;

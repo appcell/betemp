@@ -246,6 +246,14 @@ select {
   color: #444444;
   text-shadow: 0 1px 0 rgba(255,255,255,0.4);
 }
+.form-button-light-and-grey:hover, .form-button-light-and-grey:focus, .form-button-light-and-grey:active, .form-button-light-and-blue:hover, .form-button-light-and-blue:focus, .form-button-light-and-blue:active {
+  background: #eeeeee;
+  background: -webkit-gradient(linear,0% 0%,0% 100%,from(white),to(#dedede));
+  background: -webkit-linear-gradient(0% 0%,0% 100%,from(white),to(#dedede));
+  background: -moz-linear-gradient(center top,white,#dedede);
+  background: linear-gradient(#ffffff,#dedede);
+  border-color: #bebebe;
+}
 .form-button-red {
   background: #e11c1c;
   background: -webkit-gradient(linear,0% 0%,0% 100%,from(#f62f2f),to(#cc0909));
